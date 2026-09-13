@@ -1,5 +1,7 @@
 # Catálogo dos experimentos — RTX 5090
 
+**Português** | [English](../en/benchmarks.md)
+
 Consolidação documental em 12/09/2026, partindo do [handoff](../history/handoff-2026-09-12.md). Nenhum benchmark foi executado para criar este catálogo. As correções finais dos relatórios prevalecem sobre seus resumos iniciais. O [relatório final de 04/09](../../RELATORIO-FINAL-2026-09-04.md) é uma síntese histórica, não o último estado de todos os experimentos.
 
 ## Como ler os resultados

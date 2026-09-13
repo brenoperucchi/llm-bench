@@ -1,5 +1,7 @@
 # Modelos medidos e limites de uso
 
+**Português** | [English](../en/models.md)
+
 Inventário documental até o [handoff de 12/09/2026](../history/handoff-2026-09-12.md). Não é uma lista de recomendações atuais do mercado nem inventário consultado ao vivo. Tags são preservadas como aparecem nos artefatos. Modelo disponível, pesquisado ou mencionado num plano não significa modelo medido.
 
 ## Decisão registrada

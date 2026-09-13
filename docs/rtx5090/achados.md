@@ -1,5 +1,7 @@
 # Catálogo de achados — RTX 5090
 
+**Português** | [English](../en/findings.md)
+
 Consolidado em 2026-09-12 a partir do [handoff](../history/handoff-2026-09-12.md), relatórios e artefatos locais. Os arquivos históricos continuam preservados. Este catálogo dá preferência às correções explícitas e ao dado bruto quando um resumo entra em conflito com eles.
 
 **Verificado** significa observado no recorte descrito; não é promessa para toda carga ou modelo. **Hipótese** indica explicação ainda não isolada. **Limitação** registra o que a medição não permite afirmar. **Retraído** identifica conclusão substituída. Estado de servidor e decisões abaixo são o último registro disponível, sem nova consulta à máquina.

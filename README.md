@@ -1,5 +1,7 @@
 # llm-bench — benchmarks da RTX 5090
 
+**Português** | [English](docs/en/README.md)
+
 Acervo de medições de desempenho, qualidade e comportamento de LLMs locais
 com Ollama na **RTX 5090 de 32 GB**. Reúne experimentos, dados brutos,
 scripts, decisões e correções registrados nesta bancada em setembro de 2026.
@@ -19,6 +21,7 @@ Os resultados pertencem às configurações e amostras descritas nas fontes.
 | Decisões adotadas e recomendações retiradas | [Decisões](docs/decisoes.md) |
 | Método, métricas e como reproduzir | [Metodologia](docs/metodologia.md) |
 | Ambiente e cuidados operacionais | [Infraestrutura](docs/infraestrutura.md) |
+| Proposta do teste discriminante NUM_PARALLEL (em inglês; não executado) | [Desenho do teste](docs/en/plans/num-parallel-discriminating-test.md) |
 | O que falta investigar | [Pendências](docs/pendencias.md) |
 | Origem dos documentos e integridade | [Proveniência](docs/proveniencia.md) |
 

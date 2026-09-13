@@ -1,5 +1,7 @@
 # EXPERIMENTO — título descritivo
 
+**Português** | [English](../en/templates/experiment.md)
+
 > Modelo para copiar; campos abaixo ainda não são evidências.
 
 ## Pergunta e status

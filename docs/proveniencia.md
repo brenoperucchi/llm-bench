@@ -1,5 +1,7 @@
 # Proveniência e integridade
 
+**Português** | [English](en/provenance.md)
+
 Esta organização começou pelo handoff indicado pelo usuário e consultou os
 relatórios, scripts e resultados locais. Não buscou benchmarks na internet,
 não leu integralmente o transcript anterior e não fez nova medição de GPU.

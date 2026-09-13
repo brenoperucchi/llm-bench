@@ -1,5 +1,7 @@
 # Infraestrutura da bancada
 
+**Português** | [English](en/infrastructure.md)
+
 Esta página descreve o estado registrado no [handoff de 12/09/2026](history/handoff-2026-09-12.md)
 e na [decisão de produção](../results/DECISAO-producao-2026-09-09.md).
 Não houve consulta ao Ollama durante a organização deste acervo.

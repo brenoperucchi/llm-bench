@@ -1,5 +1,7 @@
 # Metodologia e reprodução
 
+**Português** | [English](en/methodology.md)
+
 O [catálogo de experimentos](rtx5090/experimentos.md) descreve o desenho e as
 ressalvas de cada medição. Esta página orienta a leitura e novas execuções;
 a publicação do acervo não reexecutou inferência.
