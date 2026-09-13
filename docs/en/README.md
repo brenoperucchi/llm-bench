@@ -15,6 +15,7 @@ Results apply to the configurations and samples described in their sources.
 
 | What you want to read | Document |
 |---|---|
+| Ready-to-use assignment for external deep research | [RTX 5090 research brief](research/rtx5090-deep-research-brief.md) |
 | Experiments, results, and evidence by phase | [Benchmark catalog](benchmarks.md) |
 | Tested models and comparison limits | [Models](models.md) |
 | All 40 consolidated findings and caveats | [Findings](findings.md) |

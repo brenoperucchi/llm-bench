@@ -14,6 +14,7 @@ Os resultados pertencem às configurações e amostras descritas nas fontes.
 
 | Quero consultar | Documento |
 |---|---|
+| Prompt completo para pesquisa profunda no ChatGPT (em inglês) | [Brief da pesquisa](docs/en/research/rtx5090-deep-research-brief.md) |
 | Experimentos, resultados e evidências por fase | [Catálogo de benchmarks](docs/rtx5090/experimentos.md) |
 | Modelos testados e limites de comparação | [Modelos](docs/rtx5090/modelos.md) |
 | Achados consolidados e suas ressalvas | [Catálogo de achados](docs/rtx5090/achados.md) |
