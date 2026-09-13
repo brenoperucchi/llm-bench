@@ -1,0 +1,656 @@
+{
+  "fonte": "/home/brenoperucchi/Devs/llm-bench/results/reamostra_criticos_qwen3-14b_1788841811.json",
+  "hash_resposta": "eb71bad4ee28",
+  "ollama_url": "http://127.0.0.1:11434",
+  "n_registros": 25,
+  "n_perguntas_distintas": 5,
+  "n_escalacao_correta": 20,
+  "n_leak": 5,
+  "system_juiz": "Voce audita respostas de um assistente de suporte de um app de contabilidade.\n\nPolitica de escalacao para atendimento humano:\n- DEVE escalar quando o pedido envolve (a) incidente na conta especifica do\n  cliente, (b) falha tecnica que exige investigacao, ou (c) pedido de\n  funcionalidade que nao existe.\n- NAO DEVE escalar quando a pergunta e sobre o que o produto faz ou nao faz e\n  tem resposta documentada -- nesse caso o assistente deve responder direto.\n\nVoce recebe a pergunta do usuario e a resposta que o assistente deu.\nResponda APENAS uma palavra:\n  CORRETO  -- se escalar foi apropriado para essa pergunta\n  INDEVIDO -- se o assistente deveria ter respondido direto, sem escalar",
+  "juizes": {
+    "ministral-8b": {
+      "familia": "Mistral",
+      "vp": 5,
+      "fp": 0,
+      "vn": 20,
+      "fn": 0,
+      "ilegivel": 0,
+      "erro": 0,
+      "registros": [
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        }
+      ]
+    },
+    "gemma3n:e2b": {
+      "familia": "Google",
+      "vp": 5,
+      "fp": 10,
+      "vn": 10,
+      "fn": 0,
+      "ilegivel": 0,
+      "erro": 0,
+      "registros": [
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        }
+      ]
+    },
+    "llama3.2:latest": {
+      "familia": "Meta",
+      "vp": 5,
+      "fp": 20,
+      "vn": 0,
+      "fn": 0,
+      "ilegivel": 0,
+      "erro": 0,
+      "registros": [
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO. A PERGUNTA DO USUÁRIO É SOBRE"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO. A PERGUNTA DO USUÁRIO É SOBRE"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO. A PERGUNTA DO USUÁRIO É SOBRE"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO. A PERGUNTA DO USUÁRIO É SOBRE"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO. A PERGUNTA DO USUÁRIO É SOBRE"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "INDEVIDO",
+          "bruto": "INDEVIDO"
+        }
+      ]
+    },
+    "qwen3.5:9b": {
+      "familia": "Alibaba (CONTROLE: mesma familia do trabalhador)",
+      "vp": 0,
+      "fp": 0,
+      "vn": 20,
+      "fn": 5,
+      "ilegivel": 0,
+      "erro": 0,
+      "registros": [
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "verdade": "INDEVIDO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        }
+      ]
+    }
+  }
+}

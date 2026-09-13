@@ -1,0 +1,31 @@
+{
+  "pergunta": "o gemma4:26b serve como auto-check offline do goldset?",
+  "resposta": "nao -- o check deterministico ja acerta 12/12 com 0 falso positivo",
+  "por_que": "o goldset e um conjunto ROTULADO: cada caso traz expect_escalation, entao run_auto so compara e nao precisa inferir. O juiz resolve o caso SEM rotulo, que e producao. A conclusao 'so a pergunta distingue' vale la, nao aqui.",
+  "conjunto": "results/juiz_pares_2026-09-10.json",
+  "n_pares": 196,
+  "n_defeitos": 12,
+  "deterministico": {
+    "vp": 12,
+    "fp": 0,
+    "vn": 184,
+    "fn": 0
+  },
+  "juizes": {
+    "gemma4:26b": {
+      "vp": 11,
+      "fp": 3,
+      "minutos": 1.1
+    },
+    "qwen3.5:9b": {
+      "vp": 7,
+      "fp": 0,
+      "minutos": 0.6
+    },
+    "qwen3:14b": {
+      "vp": 3,
+      "fp": 1,
+      "minutos": 0.4
+    }
+  }
+}

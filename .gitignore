@@ -1,0 +1,22 @@
+# Ambiente local e estado das sessões
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.herdr/
+llm-bench/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+.idea/
+.vscode/
+
+# Resultados e prompts são evidências: devem ser versionados.

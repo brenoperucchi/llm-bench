@@ -1,0 +1,109 @@
+Leia o documento tecnico abaixo (em portugues) e produza um resumo de exatamente 3 frases, em portugues, destacando o achado operacional mais importante.
+
+---
+
+# Baseline RTX 3080 Ti — congelada em 2026-09-04
+
+A RTX 3080 Ti (12 GB) foi substituída por uma RTX 5090 (32 GB) no Ryzen9WSL em
+**2026-09-04, por volta de 02:36** (primeira aparição da placa nova no journal do
+`content-insights-ollama.service`). **A placa antiga não está mais na máquina** —
+nenhum número desta baseline pode ser re-medido. Este arquivo existe para
+preservar o que dá para saber sobre ela antes que as fontes rolem.
+
+## Não existe benchmark de tok/s dedicado da 3080 Ti
+
+Procurado em 2026-09-04 e **não encontrado**:
+
+- toda a home local (`find` por `*bench*` + grep por `eval_count`/`tok/s`/`tokens/s`
+  em `~/Devs`, `~/Projects`, `~/Documents`, `~/Downloads`, `~/Work`);
+- o Ryzen9 inteiro — home do WSL **e** lado Windows (`Desktop`, `Devs`,
+  `Documents`, `OneDrive`);
+- 382 transcripts de sessão via `search-sessions --deep`.
+
+O `README.md` deste repositório (escrito em 2026-09-04 04:06 no Ryzen9) registra
+o motivo: um benchmark 3080 Ti vs MacBook Pro M5 Pro foi feito em **25/03/2026**
+numa sessão de chat, **nunca salvo em arquivo, sessão perdida**. O transcript
+mais antigo retido localmente é de **2026-06-30** — março está fora da janela.
+
+Falsos positivos, para ninguém procurar de novo:
+
+| Arquivo | O que é de verdade |
+|---|---|
+| `contabil/docs/Benchmark.md` (e 2 cópias) | comparativo de produto vs Wave Accounting |
+| `Instructions/MEMORY_BENCHMARK_METHODOLOGY.md` | uso de RAM, Linux vs macOS |
+| `acervo/.../benchmark_plan_layout_proposals.py` | qualidade de layout urbanístico |
+| `acervo/docs/plans/01-initial-plan.md:88` — "~50 tok/s" | estimativa de planejamento, não medição |
+
+## O que existe: 2.462 chamadas reais em produção
+
+Não é um benchmark sintético — é telemetria do Ollama gravada pelo pipeline do
+**content-insights-collector**, que consome o Ollama do Ryzen9 direto. Fonte:
+`~/Devs/content-insights-collector/data/local-staging.db`, tabela `analysis_runs`.
+O banco parou de escrever em **2026-08-31**, três dias antes da troca de placa —
+**todo run nele é 3080 Ti**.
+
+Dados brutos congelados aqui: [`runs-3080ti.csv`](runs-3080ti.csv) (3.109 runs,
+inclusive os que falharam).
+
+### Throughput e latência (só `status='succeeded'`)
+
+| Modelo | Tarefa | n | prompt méd. | saída méd. | **tok/s med.** | p5 | p95 | wall med. | wall p95 | wall máx |
+|---|---|---|---|---|---|---|---|---|---|---|
+| qwen3:14b | triage | 1688 | 2086 | 127 | **63,9** | 24,3 | 70,1 | 1,90 s | 5,71 s | 99,2 s |
+| qwen3:8b | verification | 538 | 2129 | 144 | **100,5** | 24,8 | 112,2 | 1,43 s | 5,29 s | 19,6 s |
+| qwen3:14b | opportunity_probe | 236 | 2183 | 975 | **68,0** | 23,8 | 69,2 | 14,45 s | 39,52 s | 44,7 s |
+
+> **Ressalva metodológica — leia antes de comparar.** O `tok/s` acima é
+> `eval_count / total_duration`, e `total_duration` **inclui o prefill** dos
+> ~2.100 tokens de prompt (e eventual load do modelo). Portanto **subestima** a
+> velocidade de geração pura. Não é comparável 1:1 com `results/bench_*.json`,
+> que usa `eval_count / eval_duration`. Para um A/B honesto contra a 5090,
+> re-execute **esta mesma fórmula** sobre runs novos do mesmo pipeline — a query
+> está no fim deste arquivo.
+
+O p5 de ~24 tok/s nos três casos, contra medianas de 64–100, mostra uma cauda
+pesada consistente: é o custo de recarga com `OLLAMA_MAX_LOADED_MODELS=1`, com
+quatro projetos disputando o mesmo servidor.
+
+### Taxa de erro por dia — o incidente de 29/08
+
+| Dia | qwen3:14b HTTP 500 / total | qwen3:8b HTTP 500 / total |
+|---|---|---|
+| 24/08 | 0 / 500 | 0 / 141 |
+| 25/08 | 0 / 673 | 0 / 159 |
+| 26/08 | 0 / 18 | — |
+| 27/08 | 0 / 167 | 0 / 45 |
+| 28/08 | 0 / 2 | — |
+| **29/08** | **600 / 924 (64,9%)** | **26 / 132 (19,7%)** |
+| 30/08 | 0 / 146 | 0 / 74 |
+| 31/08 | 0 / 106 | 0 / 22 |
+
+Os 626 `Ollama HTTP error 500` do conjunto inteiro caem **todos** em 29/08. Zero
+nos outros sete dias. E 29/08 05:48 é exatamente quando o
+`content-insights-ollama.service` foi iniciado pela primeira vez na unit atual
+(o journal do serviço começa nesse timestamp, ainda com o hostname antigo
+`Ryzen5WSL`).
+
+**Leitura:** isso é assinatura de um incidente de infraestrutura — a
+reinstalação/migração do Ollama —, não uma característica da 3080 Ti. Não use os
+64,9% como "taxa de erro da placa antiga". Os outros erros do período são de
+validação de schema no lado do coletor (`relevance must be between 0 and 1`,
+`programming.llm_workflow requires uses_llm=true`), não do servidor.
+
+## Ocupação de VRAM — o aperto que justificou a troca
+
+De [`phase7-qwen3-2026-08-24.md`](phase7-qwen3-2026-08-24.md), a validação do
+pipeline no mesmo dia em que os primeiros runs do CSV foram gravados:
+
+> GPU remota confirmada: NVIDIA GeForce RTX 3080 Ti, 12 GiB. […] Smoke real do
+> Qwen3 14B: `size_vram=10190879872` e uso observado de 91% da GPU.
+
+São **9,49 GiB residentes de 12 GiB — 79% da VRAM** com um único modelo carregado
+(os 91% do texto são utilização do processador da GPU, métrica diferente; não
+confundir). Sobravam ~2,5 GiB para KV cache e buffers, e era isso que forçava
+`OLLAMA_MAX_LOADED_MODELS=1` com três modelos em rodízio.
+
+Para comparação, a mesma medida na 5090: 30,2 GiB utilizáveis, com o Ollama
+elevando o contexto default de 4k para 32k sozinho ao cruzar os 24 GiB. Ver
+[`../rtx5090-modelos-parametrizacao.md`](../rtx5090-modelos-parametrizacao.md).
+

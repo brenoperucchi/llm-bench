@@ -1,0 +1,1198 @@
+{
+  "modelo": "qwen3.8:27b",
+  "n": 5,
+  "casos": [
+    "plaid_trap_pt",
+    "autosync_en",
+    "quickbooks_trap_en",
+    "payroll_trap_pt",
+    "mobile_trap_en",
+    "escalate_double_charge_en",
+    "escalate_stripe_broken_pt",
+    "escalate_feature_en",
+    "escalate_wrong_numbers_pt"
+  ],
+  "agregado_ok": 38,
+  "agregado_total": 45,
+  "casos_com_defeito": [
+    "quickbooks_trap_en",
+    "mobile_trap_en",
+    "escalate_stripe_broken_pt",
+    "escalate_wrong_numbers_pt"
+  ],
+  "por_caso": {
+    "plaid_trap_pt": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "autosync_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "quickbooks_trap_en": {
+      "acertos": 1,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "payroll_trap_pt": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "mobile_trap_en": {
+      "acertos": 4,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "escalate_double_charge_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "escalation"
+    },
+    "escalate_stripe_broken_pt": {
+      "acertos": 4,
+      "validas": 5,
+      "categoria": "escalation"
+    },
+    "escalate_feature_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "escalation"
+    },
+    "escalate_wrong_numbers_pt": {
+      "acertos": 4,
+      "validas": 5,
+      "categoria": "escalation"
+    }
+  },
+  "erros_infra": 0,
+  "registros": [
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Entendo a sua dúvida, mas a resposta é **não**.\n\nA Isafi não utiliza o Plaid. Nós usamos a tecnologia da **Stripe Financial Connections** para a sincronização automática das suas contas bancárias.\n\nEssa integração funciona com a maioria dos bancos dos EUA e garante que suas transações sejam sincronizadas automaticamente para que você não precise digitar nada manualmente.\n\n**Para configurar a sincronização automática do seu banco, siga estas etapas:**\n\n1. Vá em **Banking → Bank Accounts** na barra de navegação superior\n2. Clique em **\"Connect Bank\"**\n3. Selecione o seu banco na lista de instituições suportadas\n4. Faça login com suas credenciais bancárias para autorizar a conexão\n5. Confirme as permissões para sincronizar as transações\n\n*Nota: A sincronização automática é um recurso do plano **Pro**. Se você estiver no plano gratuito, ainda pode importar transações manualmente via arquivo CSV ou OFX.*\n\nPosso ajudar com mais alguma coisa?",
+      "metrica": {
+        "wall_s": 15.4,
+        "eval_count": 217,
+        "tokens_per_s": 127.5,
+        "load_duration_s": 13.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Great question!\n\nA resposta curta é: **não, nós não usamos o Plaid**.\n\nEm vez disso, a Isafi utiliza o **Stripe Financial Connections** para a sincronização automática das suas contas bancárias. Essa tecnologia funciona com a maioria dos bancos nos EUA e permite que suas transações sejam sincronizadas automaticamente, mantendo tudo organizado para você.\n\nA sincronização automática é um recurso do plano **Pro**. Se você estiver no plano Free, ainda pode importar suas transações manualmente via arquivo CSV ou OFX.\n\nSe você tiver o plano Pro e quiser, posso te mostrar exatamente como conectar seu banco. Quer que eu te guie nesse processo?",
+      "metrica": {
+        "wall_s": 1.3,
+        "eval_count": 141,
+        "tokens_per_s": 121.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Tenho uma ótima notícia, mas com um pequeno detalhe técnico.\n\nNa verdade, **não usamos o Plaid**. Utilizamos o **Stripe Financial Connections** para a sincronização bancária automática.\n\nEssa tecnologia funciona com a maioria dos bancos nos Estados Unidos e permite que suas transações sejam sincronizadas automaticamente para o Isafi. É uma funcionalidade excelente para manter suas finanças organizadas sem esforço manual.\n\n**Para configurar a sincronização bancária automática, siga estas etapas:**\n\n1. Acesse **Banking → Bank Accounts** na navegação superior\n2. Clique em **\"Connect Bank\"**\n3. Selecione seu banco da lista de instituições suportadas\n4. Siga as instruções de login seguro fornecidas pela Stripe\n5. Confirme as permissões para sincronizar as transações\n\n⚠️ **Nota importante:** A sincronização automática via Stripe Financial Connections é uma funcionalidade do plano **Pro**. Se você estiver no plano gratuito, ainda pode importar transações manualmente via arquivos CSV ou OFX.\n\nPosso ajudar com mais alguma coisa sobre as suas contas bancárias?",
+      "metrica": {
+        "wall_s": 2.1,
+        "eval_count": 235,
+        "tokens_per_s": 120.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! É uma ótima pergunta.\n\nNa verdade, **não usamos o Plaid**. Para a sincronização automática de contas bancárias, utilizamos o **Stripe Financial Connections**.\n\nEssa tecnologia funciona com a maioria dos bancos dos EUA e permite que suas transações sejam sincronizadas automaticamente, facilitando a conciliação das suas finanças.\n\n**Para conectar seu banco automaticamente, siga estes passos:**\n\n1. Vá até **Banking** no menu de navegação superior\n2. Clique em **Bank Accounts**\n3. Selecione **\"Connect Bank\"**\n4. Escolha seu banco e faça login para autorizar a conexão\n\n*Nota: A sincronização automática é uma funcionalidade do plano Pro.*\n\nSe preferir, você também pode importar transações manualmente via arquivo CSV/OFX. Posso mostrar como fazer isso também?",
+      "metrica": {
+        "wall_s": 1.5,
+        "eval_count": 179,
+        "tokens_per_s": 126.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, não usamos o Plaid. Usamos o **Stripe Financial Connections** para sincronizar suas contas bancárias automaticamente.\n\nEssa ferramenta funciona com a maioria dos bancos dos EUA e sincroniza suas transações de forma automática. É uma funcionalidade disponível no plano **Pro**.\n\n**Para configurar a sincronização bancária automática, siga estas etapas:**\n\n1. Vá em **Banking → Bank Accounts** na barra de navegação superior\n2. Clique em **\"Connect Bank\"**\n3. Selecione seu banco na lista de instituições suportadas\n4. Entre com suas credenciais bancárias na janela do Stripe\n5. Confirme as permissões para importar transações\n6. Clique em **\"Finish\"** para concluir a conexão\n\nSe você estiver no plano Free, ainda pode importar transações manualmente via CSV/OFX, mas a sincronização automática exige o plano Pro. Quer que eu te ajude com mais alguma coisa?",
+      "metrica": {
+        "wall_s": 1.8,
+        "eval_count": 197,
+        "tokens_per_s": 119.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, absolutely! Isafi does support automatic bank syncing.\n\nWe use **Stripe Financial Connections** (not Plaid) to handle this. It works with most US banks and automatically imports your transactions, making reconciliation much easier.\n\nPlease note that automatic bank syncing is a feature available on the **Pro plan**. If you are on the Free plan, you can still import transactions manually using CSV or OFX files.\n\n**To set up automatic bank syncing, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"**\n3. Select your bank from the list of supported institutions\n4. Log in to your bank account to authorize the connection\n5. Wait for your recent transactions to sync automatically\n\nWould you like me to show you how to reconcile those synced transactions once they appear?",
+      "metrica": {
+        "wall_s": 1.6,
+        "eval_count": 176,
+        "tokens_per_s": 144.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, absolutely! Isafi does support automatic bank syncing.\n\nWe use **Stripe Financial Connections** to handle this (rather than Plaid), which allows us to securely connect with most US banks and sync your transactions automatically. Please note that this is a feature available on our **Pro plan**.\n\n**To set up automatic bank sync, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"**\n3. Select your bank from the list of supported institutions\n4. Log in with your banking credentials to authorize the connection\n5. Choose how often you want transactions to sync (e.g., daily)\n6. Click **\"Connect\"** to finalize the setup\n\nOnce connected, your new transactions will appear in Isafi automatically, making reconciliation much easier! Would you like help setting it up?",
+      "metrica": {
+        "wall_s": 1.4,
+        "eval_count": 177,
+        "tokens_per_s": 136.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi does support automatic bank syncing!\n\nWe use **Stripe Financial Connections** to handle this. It works with most US banks and automatically syncs your transactions so you can keep your books up to date without manual entry.\n\nPlease note that automatic bank sync is a **Pro plan** feature. If you are on the Free plan, you can still import transactions manually using CSV or OFX files.\n\n**To set up automatic bank sync, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"**\n3. Select your bank from the list of supported institutions\n4. Log in to your bank account to authorize the connection\n5. Once connected, your transactions will start syncing automatically\n\nWould you like help with anything else regarding your banking setup?",
+      "metrica": {
+        "wall_s": 1.2,
+        "eval_count": 171,
+        "tokens_per_s": 157.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi does support automatic bank syncing!\n\nIt uses **Stripe Financial Connections** (not Plaid) to connect your bank accounts and sync transactions automatically. This is a feature available on our **Pro plan**.\n\n**To set up automatic bank sync, follow these steps:**\n\n1. Go to **Banking** in the top navigation\n2. Click **\"Bank Accounts\"**\n3. Select **\"Connect Bank\"**\n4. Choose your bank from the list of supported institutions\n5. Authorize the connection\n6. Your transactions will begin syncing automatically\n\nWould you like help connecting your bank account or have questions about the Pro plan?",
+      "metrica": {
+        "wall_s": 1.0,
+        "eval_count": 132,
+        "tokens_per_s": 145.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, absolutely! Isafi does support automatic bank syncing.\n\nWe use **Stripe Financial Connections** to handle this (not Plaid). This allows you to connect your bank account and have your transactions sync automatically into Isafi.\n\n**To set up automatic bank sync, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"**\n3. Select your bank from the list of supported institutions\n4. Authorize the connection using your bank's secure login\n5. Once connected, your transactions will begin syncing automatically\n\nPlease note that automatic bank syncing is a feature available on the **Pro plan**. If you are on the Free plan, you can still import transactions manually using CSV or OFX files.\n\nWould you like me to show you how to connect your bank?",
+      "metrica": {
+        "wall_s": 1.5,
+        "eval_count": 173,
+        "tokens_per_s": 129.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I can help with that!\n\nUnfortunately, **Isafi does not support direct import or export from QuickBooks.**\n\nWhile we don't have a built-in migration tool for QuickBooks users, you can still get started by manually entering your key data or using manual import methods if you have your data exported from QuickBooks into a compatible format (like CSV).\n\n**To start tracking your business in Isafi, you can:**\n\n1.  Go to **Sales → Invoices** to create your current outstanding invoices\n2.  Go to **Expenses** to log recent expenses (you can upload receipts)\n3.  Go to **Clients** and **Vendors** to set up your contact lists\n\nIf you are coming from QuickBooks with a large amount of historical data, I recommend focusing on your current open items and recent transactions to get up and running quickly.\n\nIs there a specific type of data (like invoices or expenses) you are trying to move over first? I can show you the best way to enter it manually.",
+      "metrica": {
+        "wall_s": 2.3,
+        "eval_count": 213,
+        "tokens_per_s": 115.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I appreciate you asking! I have some honest news for you: **Isafi does not currently support direct import or export from QuickBooks.**\n\nWe don't have a built-in migration tool for QuickBooks data. This means you can't simply click a button to move your charts of accounts, past transactions, or client lists over automatically.\n\nHowever, you can still move your data into Isafi manually. Here is the best way to approach it:\n\n**To migrate your essential data, follow these steps:**\n\n1.  **Export from QuickBooks:** Export your client list, vendor list, and open invoices/transactions as CSV files from QuickBooks.\n2.  **Go to **Clients** or **Vendors** in Isafi:** Manually add your key contacts. If you have a large list, this will take time, so focus on active clients first.\n3.  **Go to **Sales → Invoices**:** Manually recreate any unpaid invoices that are still open.\n4.  **Go to **Expenses**:** Manually enter recent expenses that haven't been recorded yet.\n5.  **Go to **Banking**:** Connect your bank accounts to start syncing *new* transactions automatically (this is a Pro plan feature via Stripe Financial Connections).\n\n**Pro Tip:**\nSince Isafi uses double-entry accounting, it's often recommended to start fresh with your current balances (opening balances) rather than trying to import years of historical transaction data. This ensures your reports (P&L, Balance Sheet) are accurate going forward without the complexity of past data errors.\n\nIf you have a very large amount of historical data that is critical for your reporting and you need a more automated solution, I recommend reaching out to our support team to see if they have any specialized assistance options for complex migrations.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 3.7,
+        "eval_count": 420,
+        "tokens_per_s": 118.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I can help with that!\n\n**Short answer:** No, Isafi does not support direct import or export from QuickBooks.\n\nHowever, you can still move your data over! Here’s the best way to do it:\n\n1.  **Export your data from QuickBooks:** In QuickBooks, go to **File → Export → Export Lists to Excel** (or similar) to get your clients, vendors, and transaction history.\n2.  **Import into Isafi:**\n    *   **Clients & Vendors:** Go to **Clients** or **Vendors** in Isafi. Look for an **\"Import\"** option (usually a button near \"New Client/Vendor\") to upload your CSV file.\n    *   **Transactions:** If you have historical bank transactions, you can import them via **Banking → Bank Accounts → Import CSV/OFX**.\n\nIf you need help formatting your CSV files for import, or if you're looking for a migration service, I can escalate this to our support team for more personalized assistance.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 2.2,
+        "eval_count": 261,
+        "tokens_per_s": 125.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I can help with that!\n\nUnfortunately, **Isafi does not support direct import or export from QuickBooks**. We do not have a native integration for migrating data between these two platforms.\n\nIf you are switching from QuickBooks to Isafi, you will need to manually re-enter your historical data, clients, and vendors, or use manual CSV imports if the file format aligns with Isafi's import capabilities for specific lists (like clients or vendors), though transactional data imports are typically manual or handled via bank sync for new transactions.\n\n**To get started with your data in Isafi, follow these steps:**\n\n1. Go to **Clients** in the top navigation to manually add your customer list\n2. Go to **Vendors** in the top navigation to add your supplier list\n3. Go to **Sales → Invoices** or **Expenses** to manually re-enter any recent or recurring items\n4. Go to **Banking → Bank Accounts → Connect** to set up automatic bank sync for your future transactions\n\nSince this involves migrating your specific historical financial records, I recommend reaching out to our support team for the best guidance on how to structure this transition for your specific needs.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 2.5,
+        "eval_count": 291,
+        "tokens_per_s": 120.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I appreciate you asking! Unfortunately, Isafi **does not support direct import or export from QuickBooks**.\n\nHowever, you can still migrate your data to Isafi using these methods:\n\n1.  **Manual Entry**: Create your clients, vendors, and recent invoices/expenses directly in Isafi.\n2.  **CSV Import/Export**: If you export specific lists (like clients or products) from QuickBooks as a CSV file, you can often import or reference that data when setting up your new accounts in Isafi, depending on the specific data type.\n\n**To get started with migrating your core data, follow these steps:**\n\n1.  Go to **Clients** in the top navigation to add your customer list.\n2.  Go to **Vendors** in the top navigation to add your supplier list.\n3.  Go to **Sales → Invoices** to recreate any outstanding or recent invoices.\n4.  Go to **Expenses** to log any recent business expenses.\n\nIf you have a large volume of data or specific complex transactions that you're struggling to migrate, I can connect you with our support team to discuss the best workflow for your situation.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 2.3,
+        "eval_count": 290,
+        "tokens_per_s": 130.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Fico feliz em esclarecer isso para você.\n\nNo momento, o Isafi **não possui** um módulo de folha de pagamento (payroll). Nosso foco está em ajudar você a gerenciar as finanças do seu negócio, como faturamento, controle de despesas, reconciliação bancária e relatórios financeiros, mas não lidamos diretamente com o cálculo e pagamento de salários dos funcionários.\n\nSe você precisar gerenciar esses processos, recomendo utilizar uma ferramenta específica para payroll ou consultar seu contador sobre as melhores opções para a sua situação.\n\nPosso te ajudar com alguma outra dúvida sobre como o Isafi pode otimizar suas finanças?",
+      "metrica": {
+        "wall_s": 1.6,
+        "eval_count": 138,
+        "tokens_per_s": 114.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Que ótima pergunta.\n\nPara ser totalmente transparente com você: o Isafi **não possui** um módulo de folha de pagamento (payroll). Nosso foco é em ajudar você a gerenciar suas finanças gerais, como emissão de faturas, controle de despesas e relatórios financeiros, mas não lidamos diretamente com o cálculo de salários, impostos de funcionários ou gestão de RH.\n\nSe você precisa gerenciar a folha de pagamento, recomendamos usar uma ferramenta dedicada a isso que se integre bem com suas finanças, e depois registrar esses pagamentos como despesas no Isafi para manter seus relatórios financeiros precisos.\n\nPosso te mostrar como registrar esses custos de folha como despesas no Isafi, caso queira?",
+      "metrica": {
+        "wall_s": 1.8,
+        "eval_count": 151,
+        "tokens_per_s": 91.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Não, o Isafi **não possui** um módulo de folha de pagamento (payroll).\n\nNossa plataforma é focada em gestão financeira, faturamento e contabilidade básica para pequenas empresas, mas não gerencia salários, impostos de funcionários ou folha de pagamento.\n\nSe você precisar dessa funcionalidade, recomendo integrar o Isafi com uma ferramenta especializada em RH ou folha de pagamento, e depois importar os custos relacionados como despesas no Isafi para manter sua contabilidade atualizada.\n\nPosso te ajudar com mais alguma coisa sobre as funcionalidades que temos?",
+      "metrica": {
+        "wall_s": 1.3,
+        "eval_count": 119,
+        "tokens_per_s": 96.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Eu sou a Lana Mitchell, da Isafi.\n\nA resposta curta é: **não, a Isafi não possui um módulo de folha de pagamento (payroll).**\n\nNós nos concentramos em ajudar pequenos empresários a gerenciar suas finanças gerais, como faturamento, controle de despesas, conciliação bancária e relatórios financeiros. No entanto, o processamento de salários, impostos sobre folha de pagamento e folha de pagamento propriamente dita não fazem parte dos nossos recursos.\n\nPara gerenciar sua folha de pagamento, você precisará de um software especializado em RH ou payroll.\n\nComo posso ajudá-lo com as outras áreas financeiras da sua empresa, como a criação de faturas ou o rastreamento de despesas?",
+      "metrica": {
+        "wall_s": 1.7,
+        "eval_count": 157,
+        "tokens_per_s": 97.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Olá! Entendo perfeitamente a dúvida.\n\nPara ser transparente com você: o Isafi **não possui** um módulo de folha de pagamento (payroll). Nosso foco é ajudar pequenos empresários a gerenciar finanças, faturamento, despesas e relatórios financeiros de forma simples e eficiente.\n\nComo não temos essa funcionalidade, recomendo procurar ferramentas especializadas em payroll ou um contador para essa parte específica dos seus processos. Se precisar de ajuda com a parte financeira que o Isafi cobre (como emissão de notas, controle de despesas ou relatórios), estou à disposição para orientar!",
+      "metrica": {
+        "wall_s": 1.4,
+        "eval_count": 125,
+        "tokens_per_s": 96.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I can help with that! However, I have some news that might be a bit of a surprise.\n\nCurrently, Isafi is a **web-only application**. We do not currently have a mobile app available for download on the iPhone App Store or Android Play Store.\n\nYou can access Isafi anytime and anywhere by visiting our website on your iPhone’s browser (Safari or Chrome). You can add it to your home screen for a quick-launch experience similar to an app:\n\n**To add Isafi to your iPhone home screen, follow these steps:**\n\n1. Open **Safari** on your iPhone and log in to your Isafi account\n2. Tap the **Share** icon (the square with an arrow pointing up) in the bottom toolbar\n3. Scroll down and tap **\"Add to Home Screen\"**\n4. Tap **\"Add\"** in the top right corner\n\nNow you can launch Isafi directly from your home screen just like a native app!\n\nIf you have any other questions about using Isafi on the web, feel free to ask.",
+      "metrica": {
+        "wall_s": 2.1,
+        "eval_count": 217,
+        "tokens_per_s": 131.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I appreciate you asking, but I need to be honest with you: **Isafi does not currently have a mobile app.** It is a **web-only platform**, meaning you can access it from any device (iPhone, Android, tablet, or computer) by logging in through a web browser like Safari or Chrome.\n\nSo, you won't find an Isafi app in the Apple App Store.\n\n**To access Isafi on your iPhone, follow these steps:**\n\n1. Open your **Safari** (or Chrome) browser\n2. Go to **isafi.com** (or your specific Isafi login URL)\n3. Log in with your credentials\n4. You can then add the site to your home screen for quick access:\n   - Tap the **Share** button (square with an arrow pointing up)\n   - Scroll down and tap **\"Add to Home Screen\"**\n   - Tap **\"Add\"** in the top right corner\n\nThis gives you a near-app experience! Let me know if you need help with anything else.",
+      "metrica": {
+        "wall_s": 1.6,
+        "eval_count": 215,
+        "tokens_per_s": 139.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I can help with that! However, I need to clarify that **Isafi is currently a web-only platform**. We do not have a native mobile app for iPhone or Android available for download at this time.\n\nYou can access all your Isafi features—like creating invoices, tracking expenses, and viewing reports—by logging in through your web browser on any device, including your iPhone.\n\nIf you have specific questions about how to use the web version on a mobile device or need help with a particular task, feel free to ask!",
+      "metrica": {
+        "wall_s": 1.1,
+        "eval_count": 109,
+        "tokens_per_s": 109.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I can help with that! However, I need to be honest: **Isafi does not currently have a mobile app.**\n\nWe are a **web-only** platform. This means you can access your Isafi account and manage your finances from any device (iPhone, Android, or computer) by logging in through your web browser (like Safari or Chrome).\n\nSince you are using an iPhone, here is how you can access Isafi:\n\n1. Open your **Safari** or **Chrome** browser\n2. Go to the Isafi website\n3. Log in with your credentials\n\nIf you find it difficult to keep the login details handy on your phone, I recommend adding Isafi to your **home screen** for a quicker experience:\n\n**To add Isafi to your iPhone home screen, follow these steps:**\n\n1. Open your Isafi account in **Safari**\n2. Tap the **Share** button (the square with an arrow pointing up) in the toolbar\n3. Scroll down and tap **\"Add to Home Screen\"**\n4. Tap **\"Add\"** in the top right corner\n\nThis will create an icon that looks like an app, allowing you to log in quickly.\n\nIf you are looking for specific mobile-only features that we don't currently support, please let me know what you need, and I can see if there is a workaround or if I should escalate this as a feature request to our team.",
+      "metrica": {
+        "wall_s": 2.5,
+        "eval_count": 295,
+        "tokens_per_s": 123.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I appreciate you asking! I have to be transparent with you: **Isafi does not have a mobile app.** We are currently a **web-only platform**, so you can access your dashboard, create invoices, and track expenses directly through your web browser on any device, including your iPhone.\n\nSince you are using an iPhone, you can still get a mobile-like experience:\n\n1.  Open **Safari** (or Chrome) on your iPhone.\n2.  Go to **isafi.com** (or your specific login URL).\n3.  Log in to your account.\n4.  Tap the **\"Add to Home Screen\"** option in the Safari share menu (the square with an arrow pointing up).\n\nThis will create a shortcut icon on your home screen that opens the app in full-screen mode, making it feel very much like a native app!\n\nIf you were hoping for a dedicated app with offline capabilities or push notifications that we don't currently offer, I can help track that as a feature request. Would you like me to **[ESCALATE_TO_SUPPORT]** so our product team can note your interest in a mobile app?",
+      "metrica": {
+        "wall_s": 2.2,
+        "eval_count": 235,
+        "tokens_per_s": 114.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I’m sorry to hear that you were charged twice. That can be very frustrating, especially when you're trying to keep track of your business finances.\n\nAs an AI assistant, I cannot directly access your billing account, view your transactions, or issue refunds. Since this is a specific billing issue that requires investigating your account history and payment provider details, I need to get a human specialist involved to help you resolve this.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 1.5,
+        "eval_count": 131,
+        "tokens_per_s": 126.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I am sorry to hear that you have experienced a billing issue. I cannot access your account or modify your billing history directly, so I cannot fix this for you.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.6,
+        "eval_count": 80,
+        "tokens_per_s": 149.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I’m sorry to hear that happened! That is definitely frustrating.\n\nI don't have access to your billing records or the ability to process refunds directly, so I cannot fix this for you right now. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.7,
+        "eval_count": 86,
+        "tokens_per_s": 138.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I’m sorry to hear that happened. I don't have access to your billing records or the ability to issue refunds directly, so I cannot fix this specific issue for you. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate the duplicate charge and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.7,
+        "eval_count": 83,
+        "tokens_per_s": 147.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I am sorry to hear that you experienced a billing error. I cannot directly access your account details or modify your billing history to issue a refund.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.6,
+        "eval_count": 76,
+        "tokens_per_s": 151.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": false,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I understand how frustrating it is when your payment processing stops working, especially when you are trying to get paid.\n\nI cannot directly access your account to fix a technical connection error with Stripe, and this sounds like a specific technical issue that requires investigation by our engineering or support team.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 1.3,
+        "eval_count": 103,
+        "tokens_per_s": 120.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 58,
+        "tokens_per_s": 171.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 58,
+        "tokens_per_s": 171.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I understand how frustrating it is when your payment processing stops working. Since this is a technical issue with your specific Stripe connection that I cannot diagnose directly, I need to involve our support team.\n\nI don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 97,
+        "tokens_per_s": 147.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 58,
+        "tokens_per_s": 153.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have the ability to modify the application's code or add new features like a dark mode theme. This would need to be implemented by our development team.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your feature request to our support team so they can pass it along to the product team for consideration. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 1.1,
+        "eval_count": 84,
+        "tokens_per_s": 122.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I appreciate you sharing that idea! It sounds like a great way to reduce eye strain, especially if you work late into the evening.\n\nHowever, I don't have the ability to modify the application's code or add new features directly. Since this is a feature request, I will need to pass it along to our product team to see if it can be added to our roadmap.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your feature request to our team so they can review it and get back to you. Please provide your email address and I'll create a support ticket to ensure your feedback reaches the right people.",
+      "metrica": {
+        "wall_s": 1.3,
+        "eval_count": 131,
+        "tokens_per_s": 115.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't currently have a dark mode feature available in Isafi. Since this is a feature request that I cannot implement or configure for you right now, I need to escalate this to our product and support teams.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your request to our support team so they can log this as a feature request and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.9,
+        "eval_count": 95,
+        "tokens_per_s": 121.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 58,
+        "tokens_per_s": 154.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I appreciate you reaching out! I don't currently have the ability to add new features like a dark mode theme to the app. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your feature request to our product team so they can consider it for future updates. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.7,
+        "eval_count": 71,
+        "tokens_per_s": 123.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": false,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I understand how frustrating it is when your financial reports don't reflect reality. Since I cannot access your specific account data to check the exact numbers or diagnose why your P&L is displaying incorrectly, I need to escalate this to our specialized support team.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.\n\n*In the meantime, you can double-check if you have any unreconciled bank transactions or pending expenses in the **Banking** section that might be affecting the period you are viewing, but our team will be able to give you a definitive answer.*",
+      "metrica": {
+        "wall_s": 1.6,
+        "eval_count": 149,
+        "tokens_per_s": 132.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I understand how frustrating it is when financial reports don't match your expectations. As an AI assistant, I do not have access to your specific account data or transaction history, so I cannot diagnose why the numbers are incorrect or verify the calculations directly.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 96,
+        "tokens_per_s": 149.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I understand how stressful it is when financial reports don't look right. Since I cannot see your specific account data or diagnose why your numbers are not adding up, I need to escalate this to our team for investigation.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 90,
+        "tokens_per_s": 137.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I understand how frustrating it is when your financial reports don't match your expectations. Since I cannot see your specific account data or diagnose why the numbers are appearing that way, I need to involve our technical team to investigate this for you.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 94,
+        "tokens_per_s": 130.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Entendo sua frustração. Ver números financeiros desatualizados ou incorretos pode ser muito preocupante, especialmente quando se trata do seu relatório de Lucro e Prejuízo (P&L).\n\nComo assistente, eu não tenho acesso direto aos seus dados financeiros específicos nem consigo diagnosticar erros técnicos no seu relatório em tempo real. No entanto, se o problema persistir após uma verificação básica dos seus lançamentos, isso pode indicar um erro de configuração ou um problema técnico que exige a atenção do nosso time especializado.\n\nEu não tenho informações suficientes para resolver este problema específico. **[ESCALATE_TO_SUPPORT]**\n\nGostaria de encaminhar sua dúvida para a nossa equipe de suporte para que eles possam investigar e entrar em contato com você. Por favor, forneça seu endereço de e-mail para que eu possa criar um chamado de suporte para você.",
+      "metrica": {
+        "wall_s": 1.8,
+        "eval_count": 178,
+        "tokens_per_s": 105.0,
+        "load_duration_s": 0.0
+      }
+    }
+  ]
+}

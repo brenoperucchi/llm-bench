@@ -1,0 +1,671 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "path": "ACHADO-qwen3-14b-pricing-leak-2026-09-04.md",
+      "bytes": 7132,
+      "sha256": "4bb03bdf20bf88ffb8a72822dbf9c50e730bff683f683b14790b8e3280da840f",
+      "type": "md"
+    },
+    {
+      "path": "MIGRACAO-windows-nativo-2026-09-04.md",
+      "bytes": 12569,
+      "sha256": "014bf91e236d6b00b2236896a42094aeed01c98732bcca7aa37c7e242aa583e2",
+      "type": "md"
+    },
+    {
+      "path": "PLANO-fase456-2026-09-05.md",
+      "bytes": 13499,
+      "sha256": "ba59e492d20db41b7a4c060307173babe1509bb2434ae7b825dbfd186f5c6777",
+      "type": "md"
+    },
+    {
+      "path": "PLANO-parametrizacao-2026-09-04.md",
+      "bytes": 21237,
+      "sha256": "b3fe41fd03a2bc019f45b1a185ae3bd39db448b5ad368b56c7d337762be5d276",
+      "type": "md"
+    },
+    {
+      "path": "RELATORIO-FINAL-2026-09-04.md",
+      "bytes": 18967,
+      "sha256": "5ee17cc2b796d4682de497b9008ba0bf56201e80a86da13c87efb4ae57200bcc",
+      "type": "md"
+    },
+    {
+      "path": "SESSOES.md",
+      "bytes": 2846,
+      "sha256": "f6f07c7da94b39fbcbd3de23dbd20be953a50ace77b566fc21762eb481ea455d",
+      "type": "md"
+    },
+    {
+      "path": "baseline-3080ti/baseline-3080ti.md",
+      "bytes": 9608,
+      "sha256": "699af2de18275dbb70e71c0b8e6a3b55a1a863aa31241e4aabeba36e64814413",
+      "type": "md"
+    },
+    {
+      "path": "baseline-3080ti/content-insights-ollama.service.txt",
+      "bytes": 1008,
+      "sha256": "fc1ce31aed555a225dbee1f6d80c61f81fab8df644d04ac888e46e0c00e6561a",
+      "type": "txt"
+    },
+    {
+      "path": "baseline-3080ti/phase7-qwen3-2026-08-24.md",
+      "bytes": 1636,
+      "sha256": "d3aa1472f08ca9503fce1b1bd98bf0e3bc58ac48711a3e81f0b58c20af6d93d3",
+      "type": "md"
+    },
+    {
+      "path": "baseline-3080ti/relatos-originais-2026-09-02.md",
+      "bytes": 12052,
+      "sha256": "eba7575674dbfd3f752448461e46edcd738419d8418f7832c817af0e57663307",
+      "type": "md"
+    },
+    {
+      "path": "baseline-3080ti/reports/ab-qwen-sonnet-comparison.html",
+      "bytes": 26314,
+      "sha256": "db5ee8c54c4a42c6ab9e4574820dcefea8a8c76de8d59f7ed91b3f877657ed62",
+      "type": "html"
+    },
+    {
+      "path": "baseline-3080ti/reports/ab-qwen-sonnet-review.md",
+      "bytes": 20230,
+      "sha256": "92dccc57e6716213adc0926eb0456600c862973e2d8e591465f9fa96ee5df313",
+      "type": "md"
+    },
+    {
+      "path": "baseline-3080ti/reports/qwen-capacity-sonnet.html",
+      "bytes": 26860,
+      "sha256": "0fc5065e965e538c7d758e53574c3efeff7fcd75274850e5cb72aaf1815e2ba6",
+      "type": "html"
+    },
+    {
+      "path": "baseline-3080ti/reports/qwen-capacity-sonnet.md",
+      "bytes": 18183,
+      "sha256": "f22538e80d4d6f480c32937447e348a26f6290f5cbad48baa8bbee009d573379",
+      "type": "md"
+    },
+    {
+      "path": "baseline-3080ti/repro/compara_check_vs_juiz.py",
+      "bytes": 3249,
+      "sha256": "953c685c03c09553c6027c745b9d96af8c027923407141096932f62725e34d01",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/disco_ab_load.py",
+      "bytes": 4388,
+      "sha256": "b1b1abaa80c4ba5c432388b200a20d42895a2e3df03aa0f25c22a698beabf952",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/fase3_ab_template.py",
+      "bytes": 7747,
+      "sha256": "0b9140eb8d170c714d5a13937fcf6ffcd25cff0c8b292a4cb358169634597514",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/fase6_concurrency.py",
+      "bytes": 12522,
+      "sha256": "35aa23f0422428063899c2f33618acfb47038c07979f1eef842bb6c475f8dd60",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/fase6_prompt_longo.txt",
+      "bytes": 5569,
+      "sha256": "5c51dc969e34f8618cecfb7d3e016070485b5a7d38ba9f8945f850035b57fdf7",
+      "type": "txt"
+    },
+    {
+      "path": "baseline-3080ti/repro/fase7_multiround_schema.py",
+      "bytes": 28150,
+      "sha256": "f00de64fee876451ff3048005986aeedd2df27fcba311f06e3b4ad967fc3f440",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/juiz_familia_ab.py",
+      "bytes": 6970,
+      "sha256": "9a034e13ec7a27979a318def5c345a8a6b3d4a152a74df568298c8c22598e2f1",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/juiz_grande.py",
+      "bytes": 14302,
+      "sha256": "d075b4b50a182cc1ca5a7658cbf864f19e25e55327343958114a73c9b272b718",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/rc.py",
+      "bytes": 1403,
+      "sha256": "c1932e6b7d258aadcd72db707627288d71cd2026a0338c0f7f4f7d4f26bacb7e",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/reamostra_criticos.py",
+      "bytes": 4952,
+      "sha256": "d22bf70e5598aa1c5b5023cd8b3047f312abed8460d36d95080020e03a9d7d1a",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/reamostra_pt_e_escalacao.py",
+      "bytes": 4841,
+      "sha256": "e0976d4eede5f14b77c42c63d35a78374af32adb8e5a7246121679a359d08fd0",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/repro.py",
+      "bytes": 1989,
+      "sha256": "b9503040c0e5d6c441fce6bbe0a27f21205af05388b5dbe8649be783447aa7b7",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/repro_direto.py",
+      "bytes": 1110,
+      "sha256": "58849414d2aa0ea2b75e929d89bcaa7bb02e8012eba4ddb58d0d2f2a30e818a7",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/repro_hipotese.py",
+      "bytes": 1370,
+      "sha256": "f1cdb0118535dca60f59ce228dd63a2dfb95f63fe042ac2848a7dd6e915947ac",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/repro_sysprompt.py",
+      "bytes": 1261,
+      "sha256": "238af02c83419898cfd08e1cef0fde72b76cc3460df0c4ce1aa6c73f9f670f9a",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/repro_tool.py",
+      "bytes": 1148,
+      "sha256": "815522643432a2b969d50737f4dad79105025e097cb6addfcc77bee44abeada8",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/rm.py",
+      "bytes": 1372,
+      "sha256": "05b683b72eda9173c3c4cf70666672b10af833968f4ae4e481be952ed4c9ce10",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/rs.py",
+      "bytes": 1261,
+      "sha256": "238af02c83419898cfd08e1cef0fde72b76cc3460df0c4ce1aa6c73f9f670f9a",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/rs2.py",
+      "bytes": 1731,
+      "sha256": "bc82691aca85b6caca23208679c27a09eddcb5aa2676a2dfd3a024851a6a9192",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/repro/seed_ab_instancia.py",
+      "bytes": 4187,
+      "sha256": "07b989eaf2bdeae5466859c4bfa262d562decc97cac6bfa552667fe5f760a106",
+      "type": "py"
+    },
+    {
+      "path": "baseline-3080ti/runs-3080ti.csv",
+      "bytes": 615896,
+      "sha256": "beec037c2d0046d333c974ee52c5f39362dc9ecdcacebb62daf65952e624c8fb",
+      "type": "csv"
+    },
+    {
+      "path": "baseline-3080ti/tool-calling-ab-2026-09-02.md",
+      "bytes": 6336,
+      "sha256": "dc6be9342d24e4e6ada2d0824df8daf51bbcd9dd7cb224faded1fbf83deba4cd",
+      "type": "md"
+    },
+    {
+      "path": "bench.py",
+      "bytes": 3767,
+      "sha256": "4d8fe50ceec07e55f05da457ad42a837e073f697fc54fc9f71a68f22c42552a5",
+      "type": "py"
+    },
+    {
+      "path": "bench_engine_ab.py",
+      "bytes": 8597,
+      "sha256": "163527a4330893bb01debb972b4dab26c7cb0855a44f1d39700c0ed19f2d963c",
+      "type": "py"
+    },
+    {
+      "path": "goldset_chat.json",
+      "bytes": 9969,
+      "sha256": "7e017ea04c9ed1e4a304801d4175d1cf61af545501f9480a7a7aef41202a773d",
+      "type": "json"
+    },
+    {
+      "path": "ollama-restart.ps1",
+      "bytes": 4572,
+      "sha256": "fd1b83acc3176e7a0b277ec35c7c03674af704d53521509e3572d40d2306151e",
+      "type": "ps1"
+    },
+    {
+      "path": "prompts/system_prompt.experimental-v1.txt",
+      "bytes": 5070,
+      "sha256": "b6b9f236af1f2d9c62dc2aecd5fdea56e28c11da6a29bc4dc78d7d3984788901",
+      "type": "txt"
+    },
+    {
+      "path": "prompts/system_prompt.experimental-v2.txt",
+      "bytes": 5229,
+      "sha256": "475b72c1e8edf73c8dbb4626b65013d05d6c162318c62ba2eac5090a55de54d6",
+      "type": "txt"
+    },
+    {
+      "path": "prompts/system_prompt.experimental-v3.txt",
+      "bytes": 5361,
+      "sha256": "977d7f78d1fdfdd3350f514cfaf6b6e4a0b47a86b55d8e9fce9604531bb3eb73",
+      "type": "txt"
+    },
+    {
+      "path": "prompts/system_prompt.pre-fix-2026-09-04.txt",
+      "bytes": 5110,
+      "sha256": "11f95bf951633caf2b1e7b7bd72efb6492845604348651afdb5b0bbd9ec3a13a",
+      "type": "txt"
+    },
+    {
+      "path": "prompts/system_prompt.txt",
+      "bytes": 5110,
+      "sha256": "11f95bf951633caf2b1e7b7bd72efb6492845604348651afdb5b0bbd9ec3a13a",
+      "type": "txt"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 9,
+      "sha256": "7cc4959877dbe6b6c63a8eb1bfe3bfb545fa8fe5b28b1b2c13e4a7c1c0d1c4d4",
+      "type": "txt"
+    },
+    {
+      "path": "results/DECISAO-producao-2026-09-09.md",
+      "bytes": 16558,
+      "sha256": "60ae38019139b7d50f284c5297cb80489dab5f4fa99f7e7c51018155288c27d8",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase1-contexto-maxloaded-2026-09-04.md",
+      "bytes": 6969,
+      "sha256": "2277c3b9aa266b97f57538033ea3975ad92057f250d5ffb9dccf08f15a00cfaa",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase2-modelos-novos-2026-09-04.md",
+      "bytes": 9472,
+      "sha256": "d16e47db53fefa5bb446ecf70267dfd0041d967eecc7fb82573e7cc6610bbf10",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase3-toolcalling-template-2026-09-04.md",
+      "bytes": 7583,
+      "sha256": "e801c26e1e2074ec1fec903c15846787b7e2470bfc212701cdf8e162582930d7",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase4-toolcalling-qwen35-2026-09-05.md",
+      "bytes": 11137,
+      "sha256": "e65ba76c479f260b7bdf00bb05046d256f23b4ac2c591f3cd0bc1f95ccaf9b9c",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase6-numparallel-2026-09-05.md",
+      "bytes": 12114,
+      "sha256": "a9fc3fc347423ab38e442a5c240e5d061a1de24641167a64df74128fbcbb5831",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase6b-numparallel-contexto-longo-2026-09-12.md",
+      "bytes": 9958,
+      "sha256": "d8ec0b609d4b6313b4b0df72bf3f31f8f62fd8142cdf70b1d848e29cec8030dd",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-fase7-multirodada-schema-2026-09-07.md",
+      "bytes": 13480,
+      "sha256": "18e7023bcad82b19ef3e639e863f8d400a40628bb961ec8e9ac58ac538b01bca",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-juiz-familia-2026-09-10.md",
+      "bytes": 31238,
+      "sha256": "9c22baf84ef3320e3e2987226ed221dd7f9b7963712b2316a6f5f18c5f1b5d34",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-reamostra-qwen3-14b-2026-09-08.md",
+      "bytes": 8426,
+      "sha256": "33f9e27d404370b731bc8594964c00e186aa382dc2453cf77c6f38d63f230364",
+      "type": "md"
+    },
+    {
+      "path": "results/RESULTADO-wsl-vs-windows-2026-09-04.md",
+      "bytes": 6257,
+      "sha256": "4aabe267551eb97b66009c197de84dd6a67748c59e21951badad58b9f6c38a9e",
+      "type": "md"
+    },
+    {
+      "path": "results/bench_20260904_043001.json",
+      "bytes": 10205,
+      "sha256": "2c533fbc1de5fd7056c57daf6733ff5366457ac0afa27c52d27776c919086dce",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.checks-novos-2026-09-10.json",
+      "bytes": 47397,
+      "sha256": "89e2a15973679e6473fcbec58241d5b824e5f87c811180a18cee8053eea14fc0",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.gemma4.json",
+      "bytes": 23191,
+      "sha256": "8503b01153df0302beb34c5f28dbe325355faa8d2f5ccf29563467afb663b6d8",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.gpu5090-baseline.json",
+      "bytes": 63889,
+      "sha256": "3522e4b395110c7e111ca3d501741f53cb4f898b0359a4302fa797e3b3d8a2cf",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.gpu5090-deepseekr1.json",
+      "bytes": 21299,
+      "sha256": "d6e9f716e8e312ee73f9328e7ea7ceddfe556d59f43a62a229f0a1f5d9e0948e",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.gpu5090-novos.json",
+      "bytes": 185299,
+      "sha256": "517d07f6f4658d4a9ffd14a5670d834be4a51ab6241983e028c97c6afba480bb",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.gpu5090-postfix.json",
+      "bytes": 63239,
+      "sha256": "2ff38d3ce312c92e003f12636e22a8239aa9b1f01b70910cae685f5038a8223e",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_raw.gpu5090-qwen38.json",
+      "bytes": 24311,
+      "sha256": "cfc48cfd1a60f20c08b4b9582090911a377f06a42a0f16629b9ba8afe687eda3",
+      "type": "json"
+    },
+    {
+      "path": "results/chat_table.checks-novos-2026-09-10.md",
+      "bytes": 538,
+      "sha256": "18712ecddb6a415bede721be489e5e8b3616bd0685df3cc333adee3ba22cf011",
+      "type": "md"
+    },
+    {
+      "path": "results/chat_table.gemma4.md",
+      "bytes": 480,
+      "sha256": "ef3c15380b17fdd163dd2f5f2ff42cfdc77c928bb4171a00ac225896b9f5a91b",
+      "type": "md"
+    },
+    {
+      "path": "results/chat_table.gpu5090-baseline.md",
+      "bytes": 604,
+      "sha256": "88293706c1ccc366cf697c70fa2c73cbbd6a2d9fc597391907a49e572741565b",
+      "type": "md"
+    },
+    {
+      "path": "results/chat_table.gpu5090-deepseekr1.md",
+      "bytes": 483,
+      "sha256": "ca6c6e5810145cc98974d74647ac71e2bcc384586af5af81ed20f00b76fb4aee",
+      "type": "md"
+    },
+    {
+      "path": "results/chat_table.gpu5090-novos.md",
+      "bytes": 735,
+      "sha256": "7225b81d47fcaae2d1e60cd1c47a73334f3771fb7ecba455a0eabb535e518eb3",
+      "type": "md"
+    },
+    {
+      "path": "results/chat_table.gpu5090-postfix.md",
+      "bytes": 602,
+      "sha256": "924d82fd76732523c179a21d844584f207cbe1b58875e8bbd8a1675c783fe68d",
+      "type": "md"
+    },
+    {
+      "path": "results/chat_table.gpu5090-qwen38.md",
+      "bytes": 480,
+      "sha256": "3dea411a51b517bb35f70473f4948770191b7bbdcec92b7f1dd60a492748948b",
+      "type": "md"
+    },
+    {
+      "path": "results/checks-estendidos-2026-09-10.json",
+      "bytes": 4042,
+      "sha256": "52436ebec207322db524a5df5cbc2f92873331a9c870d6383a946ca08053c50e",
+      "type": "json"
+    },
+    {
+      "path": "results/comparacao-check-vs-juiz-2026-09-10.json",
+      "bytes": 821,
+      "sha256": "2fbd0d5d3bcab8e4014d4b871974e14eea693242af5859a4796bc6af31f9d2a1",
+      "type": "json"
+    },
+    {
+      "path": "results/engine_ab_20260904_145228.json",
+      "bytes": 9137,
+      "sha256": "e91151a2ac2a07eb4d0d09a2e3e35a7ed94a58a1850979ce4b1842eac2e76d2d",
+      "type": "json"
+    },
+    {
+      "path": "results/engine_ab_20260904_145228.md",
+      "bytes": 854,
+      "sha256": "3bf5ed832c61b4a32d8aa5c16f61f7b893068928fa06b475031552cef9825203",
+      "type": "md"
+    },
+    {
+      "path": "results/engine_ab_20260904_145334.json",
+      "bytes": 9295,
+      "sha256": "722a487f46f4f308a2679ccb9d92d437316f5085be4e9f57f3f44ce0f7354a87",
+      "type": "json"
+    },
+    {
+      "path": "results/engine_ab_20260904_145334.md",
+      "bytes": 872,
+      "sha256": "c9209015a39d74c7746a3e680f930572b7c7db5f72f05c684272add82a6f68a1",
+      "type": "md"
+    },
+    {
+      "path": "results/fase6_resultado_fa-off-r1_1788958934.json",
+      "bytes": 3635,
+      "sha256": "b1bd64fb6e15536879c2175c9448f114d0057611fc652cf3ae91b8b0095a8094",
+      "type": "json"
+    },
+    {
+      "path": "results/fase6_resultado_fa-off-r2_1788958982.json",
+      "bytes": 3635,
+      "sha256": "7c529c339fc8e27858cddd55fb74afaf5dac0ccdf8dbf95061289a7c1aea5a29",
+      "type": "json"
+    },
+    {
+      "path": "results/fase6_resultado_fa-on-r1_1788958958.json",
+      "bytes": 3634,
+      "sha256": "e1b13586c7c121550dac17e3ba5d7ae0b8f09d564fc1d20f803f76b3979acf0f",
+      "type": "json"
+    },
+    {
+      "path": "results/fase6_resultado_fa-on-r2_1788959006.json",
+      "bytes": 3635,
+      "sha256": "8760e38e9385241e632cc6ca6340044755b36e84a2a18994ce37c081a3f5e2aa",
+      "type": "json"
+    },
+    {
+      "path": "results/fase6_resultado_numparallel1-longo-v2_1788624124.json",
+      "bytes": 3637,
+      "sha256": "436fada2df3af16220e7c2303e1a95d4521acedb470b99cc7169dd15f20214f4",
+      "type": "json"
+    },
+    {
+      "path": "results/fase6_resultado_numparallel2-longo-v2_1788624157.json",
+      "bytes": 3647,
+      "sha256": "88597f330b9d48fdfdedbc8d4eff828acaaa07cff70758a125a5a90cbd27fef0",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_14b-A-dificil-v2_1788908599.json",
+      "bytes": 8070,
+      "sha256": "f57aecfff6958e32c6e975d25935abcc4c9740fac71f17bcfdd3100cec164ff3",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_14b-A-dificil_1788751618.json",
+      "bytes": 5913,
+      "sha256": "af0f7be6fb6d113b89b3058d519ab72d5612413d19d6fe44f21161326230d8b7",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_14b-A_1788751359.json",
+      "bytes": 3865,
+      "sha256": "28ed8927e89a740e044415dec6d9575922d4cb487f278500beef52fc8d9438a1",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_5_9b-A-dificil-v2_1788908695.json",
+      "bytes": 7460,
+      "sha256": "4e13271dd37852bb86f8b142139561b7f2a12cd9b75a2a8bb766ebd91e254112",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_5_9b-A-dificil_1788751664.json",
+      "bytes": 5055,
+      "sha256": "b45e4fd06ef613d9ef34bc573689ebe16097eabc15f7ef19d297acdb71fbb8ba",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_5_9b-A_1788751386.json",
+      "bytes": 3693,
+      "sha256": "9aeacbb69b4185a36b5c9550bc960edf1f3336895f1896e12bfd3b7c3bcd7d47",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_8_27b-A-dificil-v2_1788908646.json",
+      "bytes": 8713,
+      "sha256": "91c2144bed5d3726cd2bad11eb71676ff29fb75833b99231984b639206397a72",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_8_27b-A-dificil_1788751713.json",
+      "bytes": 8397,
+      "sha256": "f64d8007c774cbe1fe65fd1fe397c16cebc01ce8a0a1592dcbc9c4299b18b356",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_qwen3_8_27b-A_1788751419.json",
+      "bytes": 3856,
+      "sha256": "c4182e67c794ace015873f2bd4488c9c4bf5378b3707f8644e750776d1698cf2",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_smoke-dificil_1788751584.json",
+      "bytes": 2736,
+      "sha256": "6fc5c12aebe78e7f9c84e643eff796feb879543d20779fb8bc5b4d43b08605dd",
+      "type": "json"
+    },
+    {
+      "path": "results/fase7_smoke_1788751313.json",
+      "bytes": 1033,
+      "sha256": "3a6bad378db272fb58f27dcd7d40d475c04cc9224eb7cd4db0fffc11bd130a73",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_familia_ab_1789040871.json",
+      "bytes": 17806,
+      "sha256": "11aefa79479c6bd7bea38241078b0f24e6bfdb6ba8167c9c21facffa307771b2",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_grande_1789042738.json",
+      "bytes": 229112,
+      "sha256": "adaf580c2e223b7f2d7fb2b268cd3631163b7c1ed819c4a9def9f585296e72d9",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_grande_1789043675.json",
+      "bytes": 45319,
+      "sha256": "21eebc96ab387556ecdcab900a2a79c49fde687d23014429ae8a061c2f4fad4c",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_grande_1789043937.json",
+      "bytes": 45393,
+      "sha256": "8ea8d7fc66d00dec6ecedab5cf53f200849c441445865130f64e944e9683b5a4",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_grande_1789065150.json",
+      "bytes": 71069,
+      "sha256": "0adf3dff2cb285c4f9a5ebdc51aad97e72941db1901e905aba8c0a5be112924a",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_grande_1789065587.json",
+      "bytes": 459968,
+      "sha256": "3b97738333583fe2032a6d48603a8a35852b584cb9236265cfcea114bde7fc91",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_grande_1789065587_complemento.json",
+      "bytes": 743,
+      "sha256": "e3f7b1587ca0f0c340985a66ed35d809298cc65e67ec6bc6e2d0b41e673e1e81",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_pares_2026-09-10.json",
+      "bytes": 204473,
+      "sha256": "db06f457a5382735edbe83d05fba39d4a10bc8e7823d1152cac1107115f34e3a",
+      "type": "json"
+    },
+    {
+      "path": "results/juiz_pares_2026-09-10.sha256",
+      "bytes": 93,
+      "sha256": "7dd51e5d53ada2b63722051d0ae2552049653b36db4e635cea4c4a65f68a1510",
+      "type": "sha256"
+    },
+    {
+      "path": "results/reamostra_criticos_qwen3-14b-q8_1788959145.json",
+      "bytes": 42277,
+      "sha256": "0e05cd798c20fa8df2df03423e2108d099d8fb8b62c7efd0e129a12912a1f390",
+      "type": "json"
+    },
+    {
+      "path": "results/reamostra_criticos_qwen3-14b_1788841811.json",
+      "bytes": 42103,
+      "sha256": "2a9939c9b97810ad69d799d22e59fba2735a9900917cfe0726f0ef92469ed488",
+      "type": "json"
+    },
+    {
+      "path": "results/reamostra_criticos_qwen3-8-27b_1788958171.json",
+      "bytes": 59512,
+      "sha256": "ebcf3568a7d07eca9251172129e65a1835a6b4c9de291dd085ca587f246e72c0",
+      "type": "json"
+    },
+    {
+      "path": "results/reamostra_pt_escalacao_1789114271.json",
+      "bytes": 53958,
+      "sha256": "6e92ab90aaabd0ba53ccdc499fef3c4d389b15462509b7c3c5d3227e1dcc60ae",
+      "type": "json"
+    },
+    {
+      "path": "results/seed_ab_instancia_1788916205.json",
+      "bytes": 9201,
+      "sha256": "234deb5bc4acce90ae4bdfb8286e2399f3ee200856373f417e558556daac6266",
+      "type": "json"
+    },
+    {
+      "path": "rtx5090-modelos-parametrizacao.md",
+      "bytes": 26532,
+      "sha256": "ffef8085ee6b69b3675c73dc5707b3ae6b243b800ad71907a5f480db5bdc39b4",
+      "type": "md"
+    },
+    {
+      "path": "run_chat.py",
+      "bytes": 10855,
+      "sha256": "216bcd76e4f1d06de4f1025c7087b65434ff154e047597d55f7a1cacc52daa3a",
+      "type": "py"
+    }
+  ]
+}

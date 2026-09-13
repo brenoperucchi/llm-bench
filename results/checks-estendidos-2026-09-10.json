@@ -1,0 +1,152 @@
+{
+  "data": "2026-09-10",
+  "o_que_mudou": [
+    "run_chat.py: check GLOBAL no_reasoning_leak (tag <think> ou raciocinio em texto puro)",
+    "goldset_chat.json: howto_estimate_en passa a exigir 'Convert to Invoice' no must_include_any",
+    "goldset_chat.json: as 18 rubricas ganham 'O raciocinio do modelo NAO pode aparecer na resposta'"
+  ],
+  "por_que": "sondagem de 2026-09-10 mostrou que as rubricas judge sao majoritariamente redundantes com o check deterministico; onde acrescentam algo verificavel, estender o check e mais barato e exato que medir um juiz LLM. Ver RESULTADO-juiz-familia-2026-09-10.md.",
+  "aviso_de_comparabilidade": "o denominador de auto_score mudou de 5-6 para 6-7 checks. auto_score de artefatos anteriores a 2026-09-10 nao e comparavel com os de depois; os campos individuais continuam comparaveis.",
+  "corpus": {
+    "respostas": 251,
+    "modelos": 11,
+    "casos": 18
+  },
+  "efeito": {
+    "passavam_em_tudo_e_agora_reprovam": 13,
+    "por_motivo": {
+      "no_reasoning_leak": 11,
+      "include_ok": 2
+    },
+    "regressoes": 0
+  },
+  "vazamento_de_raciocinio": {
+    "respostas": 18,
+    "todas_do_modelo": "qwen3:30b-a3b",
+    "com_auto_score_1.0_antes": 11,
+    "mediana_chars": 3020,
+    "mediana_chars_limpas": 530
+  },
+  "falsos_positivos_do_check_apertado": {
+    "howto_estimate_en": "0 de 14 -- 12 tem a string literal e passam"
+  },
+  "registros": [
+    {
+      "src": "chat_raw.gpu5090-novos.json#1",
+      "id": "howto_expense_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 2081
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#3",
+      "id": "howto_estimate_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 6468
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#5",
+      "id": "plaid_trap_pt",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 2673
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#6",
+      "id": "autosync_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 6173
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#7",
+      "id": "quickbooks_trap_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 6304
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#8",
+      "id": "payroll_trap_pt",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 2394
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#9",
+      "id": "mobile_trap_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 6539
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#10",
+      "id": "escalate_double_charge_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 1003
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#12",
+      "id": "escalate_feature_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 1722
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#15",
+      "id": "greet_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 1068
+    },
+    {
+      "src": "chat_raw.gpu5090-novos.json#16",
+      "id": "reports_list_en",
+      "modelo": "qwen3:30b-a3b",
+      "reprovou_em": [
+        "no_reasoning_leak"
+      ],
+      "chars": 5754
+    },
+    {
+      "src": "chat_raw.gpu5090-postfix.json#21",
+      "id": "howto_estimate_en",
+      "modelo": "qwen3.5:9b",
+      "reprovou_em": [
+        "include_ok"
+      ],
+      "chars": 896
+    },
+    {
+      "src": "chat_raw.gpu5090-postfix.json#39",
+      "id": "howto_estimate_en",
+      "modelo": "qwen2.5:14b",
+      "reprovou_em": [
+        "include_ok"
+      ],
+      "chars": 821
+    }
+  ]
+}

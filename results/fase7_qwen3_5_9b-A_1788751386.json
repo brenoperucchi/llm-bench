@@ -1,0 +1,146 @@
+{
+  "modelo": "qwen3.5:9b",
+  "braco": "A",
+  "n": 5,
+  "seed": 42,
+  "max_rounds": 8,
+  "doc_sha256": "062756773aa6a7f0862771d5a1fb102090762c281eb5bab4269a49ea58b3319a",
+  "sem_url_inventada": 5,
+  "chegou_conclude": 5,
+  "citacao_valida": 5,
+  "campo_valido": 5,
+  "conclusao_valida": 5,
+  "erros_infra": 0,
+  "runs": [
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "gastou_em_identidade": false,
+        "detalhe": [],
+        "valor_reportado": "2,4"
+      },
+      "buscas": [
+        "coeficiente de aproveitamento zona ZR-3 Vila Serrana SP"
+      ],
+      "urls_buscadas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 9.844835422001779
+    },
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "gastou_em_identidade": false,
+        "detalhe": [],
+        "valor_reportado": "2,4"
+      },
+      "buscas": [
+        "coeficiente de aproveitamento zona ZR-3 Vila Serrana SP"
+      ],
+      "urls_buscadas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 3.585156914894469
+    },
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "gastou_em_identidade": false,
+        "detalhe": [],
+        "valor_reportado": "2,4"
+      },
+      "buscas": [
+        "coeficiente de aproveitamento zona ZR-3 Vila Serrana SP"
+      ],
+      "urls_buscadas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 3.3999612969346344
+    },
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "gastou_em_identidade": false,
+        "detalhe": [],
+        "valor_reportado": "2,4"
+      },
+      "buscas": [
+        "coeficiente de aproveitamento zona ZR-3 Vila Serrana SP"
+      ],
+      "urls_buscadas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 3.461801574914716
+    },
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "gastou_em_identidade": false,
+        "detalhe": [],
+        "valor_reportado": "2,4"
+      },
+      "buscas": [
+        "coeficiente de aproveitamento zona ZR-3 Vila Serrana SP"
+      ],
+      "urls_buscadas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 3.5550970420008525
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "complementa": "juiz_grande_1789065587.json",
+  "motivo": "fecha a cobertura 195/196 do gemma4:26b, que teve 1 HTTPError",
+  "indice_no_conjunto": 0,
+  "par": {
+    "id": "plaid_trap_pt",
+    "modelo": "gemma4:26b",
+    "quadrante": "ok_respondeu",
+    "verdade": "CORRETO"
+  },
+  "erro_original": "HTTPError",
+  "veredito": "CORRETO",
+  "bruto": "CORRETO",
+  "load_s": 11.113,
+  "segundos": 11.46,
+  "gemma4_antes": {
+    "vp": 11,
+    "fp": 3,
+    "vn": 180,
+    "fn": 1,
+    "erro": 1,
+    "avaliados": 195
+  },
+  "gemma4_depois": {
+    "vp": 11,
+    "fp": 3,
+    "vn": 181,
+    "fn": 1,
+    "erro": 0,
+    "avaliados": 196
+  },
+  "fp_em_escalacao_inalterado": 0,
+  "nota": "o par e ok_respondeu; nao afeta FP em escalacao nem o 0/61"
+}

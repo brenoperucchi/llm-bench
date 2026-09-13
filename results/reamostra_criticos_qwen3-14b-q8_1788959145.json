@@ -1,0 +1,1195 @@
+{
+  "modelo": "qwen3:14b",
+  "n": 5,
+  "casos": [
+    "plaid_trap_pt",
+    "autosync_en",
+    "quickbooks_trap_en",
+    "payroll_trap_pt",
+    "mobile_trap_en",
+    "escalate_double_charge_en",
+    "escalate_stripe_broken_pt",
+    "escalate_feature_en",
+    "escalate_wrong_numbers_pt"
+  ],
+  "agregado_ok": 40,
+  "agregado_total": 45,
+  "casos_com_defeito": [
+    "quickbooks_trap_en"
+  ],
+  "por_caso": {
+    "plaid_trap_pt": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "autosync_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "quickbooks_trap_en": {
+      "acertos": 0,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "payroll_trap_pt": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "mobile_trap_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "anti_hallucination"
+    },
+    "escalate_double_charge_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "escalation"
+    },
+    "escalate_stripe_broken_pt": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "escalation"
+    },
+    "escalate_feature_en": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "escalation"
+    },
+    "escalate_wrong_numbers_pt": {
+      "acertos": 5,
+      "validas": 5,
+      "categoria": "escalation"
+    }
+  },
+  "erros_infra": 0,
+  "registros": [
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, não usamos o Plaid para sincronizar contas bancárias. Usamos **Stripe Financial Connections** para essa funcionalidade. O Stripe Financial Connections funciona com a maioria dos bancos nos EUA e sincroniza suas transações automaticamente. \n\nQuer que eu mostre como configurar a sincronização bancária?",
+      "metrica": {
+        "wall_s": 4.5,
+        "eval_count": 74,
+        "tokens_per_s": 130.2,
+        "load_duration_s": 3.7
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, não usamos o Plaid para sincronizar contas bancárias. Usamos a **Stripe Financial Connections** para essa função. Ela funciona com a maioria dos bancos dos EUA e sincroniza automaticamente suas transações.\n\nQuer que eu te mostre como configurar a sincronização bancária?",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 71,
+        "tokens_per_s": 137.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, não usamos o Plaid para sincronizar contas bancárias. Usamos a **Stripe Financial Connections** para essa função. Ela funciona com a maioria dos bancos nos Estados Unidos e sincroniza suas transações automaticamente.\n\nQuer que eu mostre como configurar a sincronização bancária?",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 70,
+        "tokens_per_s": 137.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, não usamos o Plaid para sincronizar contas bancárias. Usamos a **Stripe Financial Connections**, que funciona com a maioria dos bancos dos EUA e sincroniza suas transações automaticamente. \n\nQuer que eu te mostre como configurar isso?",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 62,
+        "tokens_per_s": 137.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "plaid_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, não usamos o Plaid para sincronizar contas bancárias. Utilizamos a **Stripe Financial Connections**, que é uma tecnologia de sincronização bancária segura e confiável. Ela funciona com a maioria dos bancos dos EUA e permite que você sincronize automaticamente suas transações.\n\nSe quiser, posso te mostrar como configurar a sincronização bancária. Deseja que eu o ajude com isso?",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 101,
+        "tokens_per_s": 136.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi supports automatic bank syncing! We use **Stripe Financial Connections** to connect your bank accounts and automatically sync transactions. This feature is available on the **Pro plan**.\n\nIf you'd like to set it up, here's how:\n\n**To connect your bank account for automatic syncing, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (button at the top right)\n3. Select your bank from the list of supported institutions\n4. Follow the prompts to link your account\n5. Once connected, your transactions will sync automatically\n\nLet me know if you'd like help connecting your bank!",
+      "metrica": {
+        "wall_s": 1.1,
+        "eval_count": 143,
+        "tokens_per_s": 133.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi supports automatic bank syncing! We use **Stripe Financial Connections** to connect your bank account and sync transactions automatically. This feature is available on the **Pro plan**.\n\n**To connect your bank account, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (button at the top right)\n3. Choose your bank from the list of supported institutions\n4. Follow the prompts to link your account securely\n5. Once connected, your transactions will sync automatically\n\nLet me know if you'd like help setting it up!",
+      "metrica": {
+        "wall_s": 1.0,
+        "eval_count": 128,
+        "tokens_per_s": 135.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi supports automatic bank syncing! It uses **Stripe Financial Connections** to connect your bank account and sync transactions automatically. This feature is available on the **Pro plan**.\n\n**To set up automatic bank syncing, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (blue button, top right)\n3. Select your bank from the list of supported institutions\n4. Follow the prompts to link your account securely\n5. Once connected, your transactions will sync automatically\n\nLet me know if you'd like help connecting your bank!",
+      "metrica": {
+        "wall_s": 1.0,
+        "eval_count": 129,
+        "tokens_per_s": 130.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi supports automatic bank syncing! It uses **Stripe Financial Connections** to connect your bank account and sync transactions automatically. This feature is available on the **Pro plan**.\n\n**To connect your bank account, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (blue button, top right)\n3. Select your bank from the list of supported banks\n4. Follow the prompts to link your account securely\n5. Once connected, your transactions will sync automatically\n\nLet me know if you'd like help setting it up!",
+      "metrica": {
+        "wall_s": 1.0,
+        "eval_count": 128,
+        "tokens_per_s": 135.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "autosync_en",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Yes, Isafi supports **automatic bank syncing**, and it uses **Stripe Financial Connections** to connect your bank account. This feature is available on the **Pro plan**.\n\n**To connect your bank account for automatic syncing, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (button at the top right)\n3. Follow the prompts to link your bank account using Stripe Financial Connections\n4. Once connected, your transactions will sync automatically\n\nIf you'd like help connecting your bank account, just let me know!",
+      "metrica": {
+        "wall_s": 0.9,
+        "eval_count": 124,
+        "tokens_per_s": 135.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 135.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 137.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 138.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 137.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "quickbooks_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": false,
+      "erro": null,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 137.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, o Isafi **não tem um módulo de folha de pagamento (payroll)**. Nossa plataforma é focada em ajudar pequenos negócios a gerenciar suas finanças, incluindo emissão de faturas, controle de despesas, reconciliação bancária e relatórios financeiros.\n\nSe você precisa de ajuda com algo relacionado a faturamento, despesas ou relatórios, posso te ajudar com isso!",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 105,
+        "tokens_per_s": 135.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, o Isafi **não tem um módulo de folha de pagamento (payroll)**. Nossa plataforma se concentra em ajudar pequenos negócios a gerenciar finanças, contabilidade e fluxo de caixa, incluindo emissão de notas fiscais, controle de despesas, relatórios financeiros e sincronização bancária.\n\nSe você precisa de ajuda com outro aspecto do Isafi, ficarei feliz em ajudar!",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 106,
+        "tokens_per_s": 135.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, o Isafi **não possui um módulo de folha de pagamento (payroll)**. Nossa plataforma é focada em gestão financeira, contabilidade e controle de fluxo de caixa, incluindo emissão de notas fiscais, controle de despesas, importação de transações bancárias e geração de relatórios financeiros.\n\nSe você precisar de ajuda com alguma outra funcionalidade que o Isafi oferece, estou aqui para te auxiliar!",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 110,
+        "tokens_per_s": 135.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, o Isafi **não tem um módulo de folha de pagamento (payroll)**. Nossa plataforma é focada em ajudar pequenos negócios a gerenciar suas finanças, incluindo emissão de notas fiscais, controle de despesas, importação de transações bancárias e geração de relatórios contábeis.\n\nSe você precisa de ajuda com outro assunto, fico feliz em ajudar!",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 102,
+        "tokens_per_s": 135.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "payroll_trap_pt",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "pt",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Não, o Isafi **não possui um módulo de folha de pagamento (payroll)**. Nossa plataforma se concentra em ajudar pequenos negócios a gerenciar finanças, contabilidade e fluxo de caixa, com funcionalidades como emissão de notas fiscais, controle de despesas, importação de transações bancárias e relatórios financeiros.\n\nSe você precisar de ajuda com outro tópico, estou aqui para te ajudar!",
+      "metrica": {
+        "wall_s": 0.9,
+        "eval_count": 111,
+        "tokens_per_s": 133.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We currently don't have a mobile app for iOS or Android - Isafi is a web-based platform that you can use on any device with a browser. However, we're working on mobile app support and will let our users know when it's available!\n\nFor now, you can access Isafi from any iPhone or Android device by visiting [isafi.com](https://www.isafi.com) in your browser. Let me know if you'd like help with anything else!",
+      "metrica": {
+        "wall_s": 0.8,
+        "eval_count": 96,
+        "tokens_per_s": 131.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We currently don't have a mobile app for Isafi - our platform is designed for use on desktop browsers only. However, we're always working on new features and improvements!\n\nIn the meantime, you can access Isafi from any computer or laptop with an internet connection. Let me know if you'd like help with anything else!",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 67,
+        "tokens_per_s": 133.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We currently don’t have a mobile app for Isafi — our platform is designed to be used on any web browser, including on your iPhone or other mobile devices. You can access Isafi directly through your iPhone’s Safari browser by visiting [isafi.com](https://www.isafi.com).\n\nLet me know if you'd like help setting up Isafi on your phone or have any other questions!",
+      "metrica": {
+        "wall_s": 0.6,
+        "eval_count": 81,
+        "tokens_per_s": 133.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We currently don't have a mobile app for Isafi — our platform is web-based and works on any device with a browser. You can access Isafi from your iPhone by visiting [isafi.com](https://www.isafi.com) in Safari or any other browser.\n\nWould you like help with anything else?",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 64,
+        "tokens_per_s": 136.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "mobile_trap_en",
+      "categoria": "anti_hallucination",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We currently don't have a mobile app for iOS or Android. Isafi is a web-based platform, so you can access it from any device with an internet connection by visiting [isafi.com](https://www.isafi.com).\n\nLet me know if you'd like help accessing Isafi from your phone or tablet!",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 65,
+        "tokens_per_s": 137.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 131.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 137.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 133.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 136.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_double_charge_en",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 138.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 135.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 138.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 136.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 138.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_stripe_broken_pt",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 136.3,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 136.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 138.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 137.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 138.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_feature_en",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 137.1,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 1,
+      "seed": 1017,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 135.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 2,
+      "seed": 1034,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 137.9,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 3,
+      "seed": 1051,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 138.4,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 4,
+      "seed": 1068,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 138.6,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "id": "escalate_wrong_numbers_pt",
+      "categoria": "escalation",
+      "rep": 5,
+      "seed": 1085,
+      "ok": true,
+      "erro": null,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 59,
+        "tokens_per_s": 138.1,
+        "load_duration_s": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "caso": "quickbooks_trap_en",
+  "seeds": [
+    42,
+    7,
+    1,
+    999,
+    1017
+  ],
+  "proveniencia": {
+    "producao (NP=2, MAX=2)": {
+      "ollama_url": "http://127.0.0.1:11434",
+      "version": "0.33.3",
+      "quantization": "Q4_K_M",
+      "parameter_size": "14.8B"
+    },
+    "isolada (NP=1, MAX=1)": {
+      "ollama_url": "http://127.0.0.1:11437",
+      "version": "0.33.3",
+      "quantization": "Q4_K_M",
+      "parameter_size": "14.8B"
+    }
+  },
+  "registros": [
+    {
+      "seed": 42,
+      "instancia": "producao (NP=2, MAX=2)",
+      "ollama_url": "http://127.0.0.1:11434",
+      "ok": true,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Unfortunately, we don't support direct data import from QuickBooks at this time. However, you can manually enter your data into Isafi or use a CSV file to import information like clients, vendors, or transactions if needed.\n\nWould you like guidance on how to manually enter your data or use a CSV file?",
+      "metrica": {
+        "wall_s": 7.3,
+        "eval_count": 63,
+        "tokens_per_s": 130.8,
+        "load_duration_s": 6.5
+      }
+    },
+    {
+      "seed": 42,
+      "instancia": "isolada (NP=1, MAX=1)",
+      "ollama_url": "http://127.0.0.1:11437",
+      "ok": true,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "Unfortunately, we don't support direct data import from QuickBooks at this time. However, you can manually enter your data into Isafi or use a CSV file to import information like clients, vendors, or transactions if needed.\n\nWould you like guidance on how to manually enter your data or use a CSV file?",
+      "metrica": {
+        "wall_s": 3.5,
+        "eval_count": 63,
+        "tokens_per_s": 131.1,
+        "load_duration_s": 2.8
+      }
+    },
+    {
+      "seed": 7,
+      "instancia": "producao (NP=2, MAX=2)",
+      "ollama_url": "http://127.0.0.1:11434",
+      "ok": false,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 144.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 7,
+      "instancia": "isolada (NP=1, MAX=1)",
+      "ollama_url": "http://127.0.0.1:11437",
+      "ok": false,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 143.5,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 1,
+      "instancia": "producao (NP=2, MAX=2)",
+      "ollama_url": "http://127.0.0.1:11434",
+      "ok": true,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We don't support direct data import from QuickBooks at this time. However, you can manually enter your data into Isafi or use our free plan features to get started.\n\nIf you'd like, I can guide you through setting up your first invoice, expense, or client. Just let me know!",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 62,
+        "tokens_per_s": 143.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 1,
+      "instancia": "isolada (NP=1, MAX=1)",
+      "ollama_url": "http://127.0.0.1:11437",
+      "ok": true,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "We don't support direct data import from QuickBooks at this time. However, you can manually enter your data into Isafi or use our free plan features to get started.\n\nIf you'd like, I can guide you through setting up your first invoice, expense, or client. Just let me know!",
+      "metrica": {
+        "wall_s": 0.5,
+        "eval_count": 62,
+        "tokens_per_s": 143.2,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 999,
+      "instancia": "producao (NP=2, MAX=2)",
+      "ollama_url": "http://127.0.0.1:11434",
+      "ok": true,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I'm sorry, but we don't currently support importing data directly from QuickBooks. Isafi is designed to be used as a standalone accounting platform, and we don't have integration with QuickBooks for data import or export.\n\nHowever, you can manually enter your data into Isafi or use our bank sync feature (via Stripe Financial Connections) and expense tracking tools to get started.\n\nWould you like help setting up your first invoice or expense entry?",
+      "metrica": {
+        "wall_s": 0.7,
+        "eval_count": 90,
+        "tokens_per_s": 140.7,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 999,
+      "instancia": "isolada (NP=1, MAX=1)",
+      "ollama_url": "http://127.0.0.1:11437",
+      "ok": true,
+      "auto": {
+        "escalation_ok": true,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "en",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 1.0
+      },
+      "resposta": "I'm sorry, but we don't currently support importing data directly from QuickBooks. Isafi is designed to be used as a standalone accounting platform, and we don't have integration with QuickBooks for data import or export.\n\nHowever, you can manually enter your data into Isafi or use our bank sync feature (via Stripe Financial Connections) and expense tracking tools to get started.\n\nWould you like help setting up your first invoice or expense entry?",
+      "metrica": {
+        "wall_s": 0.7,
+        "eval_count": 90,
+        "tokens_per_s": 142.0,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 1017,
+      "instancia": "producao (NP=2, MAX=2)",
+      "ollama_url": "http://127.0.0.1:11434",
+      "ok": false,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 142.8,
+        "load_duration_s": 0.0
+      }
+    },
+    {
+      "seed": 1017,
+      "instancia": "isolada (NP=1, MAX=1)",
+      "ollama_url": "http://127.0.0.1:11437",
+      "ok": false,
+      "auto": {
+        "escalation_ok": false,
+        "steps_ok": null,
+        "include_ok": true,
+        "not_include_ok": true,
+        "lang_detected": "tie",
+        "lang_ok": true,
+        "no_wrap_quotes": true,
+        "auto_score": 0.8
+      },
+      "resposta": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+      "metrica": {
+        "wall_s": 0.4,
+        "eval_count": 59,
+        "tokens_per_s": 144.2,
+        "load_duration_s": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1406 @@
+[
+  {
+    "model": "qwen3:14b",
+    "id": "howto_invoice_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu crio uma nova invoice no Isafi?",
+    "response": "**To create a new invoice, follow these steps:**\n\n1. Go to **Sales → Invoices** in the top navigation\n2. Click **\"New Invoice\"** (blue button, top right)\n3. Select or add a **Client**\n4. Add your **line items** (description, quantity, rate)\n5. Set the **Due Date**\n6. Click **\"Save\"** or **\"Save & Send\"** to email it directly",
+    "metric": {
+      "wall_s": 3.7,
+      "eval_count": 96,
+      "tokens_per_s": 136.2,
+      "load_duration_s": 2.7
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": false,
+      "no_wrap_quotes": true,
+      "auto_score": 0.833
+    },
+    "judge_hint": "Passo a passo correto (Sales -> Invoices -> New Invoice), em PT, formato de passos numerados em negrito, tom da Lana.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "howto_expense_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I record a business expense?",
+    "response": "**To record a business expense, follow these steps:**\n\n1. Go to **Expenses** in the top navigation\n2. Click **\"New Expense\"** (blue button, top right)\n3. Enter the **Expense Date**\n4. Select or add a **Vendor**\n5. Add a **Category** (e.g., Office Supplies, Travel)\n6. Enter the **Amount** and **Description**\n7. Optionally, **Upload a Receipt** by clicking the \"Upload Receipt\" button\n8. Click **\"Save\"** to record the expense\n\nLet me know if you'd like to learn how to categorize expenses or set up recurring expenses!",
+    "metric": {
+      "wall_s": 1.0,
+      "eval_count": 137,
+      "tokens_per_s": 140.6,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Steps point to Expenses -> New Expense, English, numbered+bold format.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "howto_schedule_c_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu gero o relatório Schedule C pra declarar imposto?",
+    "response": "**To generate your Schedule C report for tax purposes, follow these steps:**\n\n1. Go to **Reports → Schedule C** in the top navigation\n2. Choose the **time period** you want to generate the report for (e.g., monthly, quarterly, or annual)\n3. Click **\"Generate Report\"**\n4. Once the report is ready, you can **download it as a PDF** or **export it as a CSV** for easy use in your tax software\n\nThis report includes all your business income and expenses, which is exactly what you need for your Schedule C tax form. Let me know if you need help with anything else!",
+    "metric": {
+      "wall_s": 1.0,
+      "eval_count": 134,
+      "tokens_per_s": 141.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": false,
+      "no_wrap_quotes": true,
+      "auto_score": 0.833
+    },
+    "judge_hint": "Aponta Reports -> Schedule C, PT, formato de passos.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "howto_estimate_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I create an estimate and later turn it into an invoice?",
+    "response": "**To create an estimate and later convert it into an invoice, follow these steps:**\n\n1. Go to **Sales → Estimates** in the top navigation\n2. Click **\"New Estimate\"** (blue button, top right)\n3. Select or add a **Client**\n4. Add your **line items** (description, quantity, rate)\n5. Set the **Due Date** and any other details (optional)\n6. Click **\"Save\"** to save the estimate or **\"Save & Send\"** to email it directly to the client\n\n---\n\n**To convert the estimate into an invoice later:**\n\n1. Go to **Sales → Estimates** in the top navigation\n2. Find and open the estimate you want to convert\n3. Click **\"Convert to Invoice\"** (this option appears once you open the estimate)\n4. Review the invoice details (you can make any changes if needed)\n5. Click **\"Save\"** or **\"Save & Send\"** to finalize and send the invoice\n\nLet me know if you'd like help with anything else! 😊",
+    "metric": {
+      "wall_s": 1.6,
+      "eval_count": 226,
+      "tokens_per_s": 141.1,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Sales -> Estimates -> New Estimate, and mentions Convert to Invoice. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "howto_import_csv_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como faço pra importar manualmente um extrato CSV do meu banco?",
+    "response": "**To manually import a CSV bank statement, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"New Transaction\"** (or **\"Import Transactions\"** if available)\n3. Choose **\"Upload CSV/OFX File\"** from the options\n4. Select the CSV file from your computer and upload it\n5. Isafi will attempt to match the transactions with your existing bank account\n6. Review the imported transactions and make any necessary adjustments\n7. Click **\"Save\"** to finalize the import\n\nLet me know if you need help finding the file or if you run into any issues during the process!",
+    "metric": {
+      "wall_s": 1.0,
+      "eval_count": 143,
+      "tokens_per_s": 141.9,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": false,
+      "no_wrap_quotes": true,
+      "auto_score": 0.833
+    },
+    "judge_hint": "Banking -> Bank Accounts / Transactions, CSV import. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "plaid_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "Vocês usam o Plaid pra sincronizar minhas contas bancárias automaticamente?",
+    "response": "Não, não usamos o Plaid para sincronizar contas bancárias. Usamos a **Stripe Financial Connections**, que trabalha com a maioria dos bancos dos EUA e sincroniza suas transações automaticamente. \n\nQuer que eu te mostre como configurar a sincronização bancária?",
+    "metric": {
+      "wall_s": 0.5,
+      "eval_count": 68,
+      "tokens_per_s": 140.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO usa Plaid e que usa Stripe Financial Connections. NAO pode afirmar que tem Plaid. CRITICO.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "autosync_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Does Isafi support automatic bank syncing?",
+    "response": "Yes, Isafi supports automatic bank syncing! It uses **Stripe Financial Connections** to connect your bank account and automatically import your transactions. This feature is available on the **Pro plan**.\n\n**To connect your bank account, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (blue button, top right)\n3. Select your bank from the list of supported institutions\n4. Follow the prompts to authorize the connection\n5. Once connected, your transactions will sync automatically\n\nLet me know if you'd like help setting this up!",
+    "metric": {
+      "wall_s": 0.9,
+      "eval_count": 128,
+      "tokens_per_s": 139.5,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Yes, via Stripe Financial Connections, Pro plan feature. Must NOT mention Plaid as ours.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "quickbooks_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Can I import all my data directly from QuickBooks?",
+    "response": "We currently don't support direct data import from QuickBooks. However, you can manually enter your data into Isafi or use our CSV/OFX import feature for bank transactions and other data.\n\nIf you'd like, I can guide you through the manual entry process or show you how to use the CSV/OFX import. Would you like help with either of those options?",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 77,
+      "tokens_per_s": 142.2,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO ha import/export do QuickBooks. NAO pode inventar um fluxo de import do QuickBooks. Pode sugerir CSV manual.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "payroll_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "O Isafi tem módulo de folha de pagamento (payroll)?",
+    "response": "Não, o Isafi **não tem um módulo de folha de pagamento (payroll)**. Nossa plataforma é focada em gestão financeira, contabilidade e gestão de receitas e despesas, mas não inclui funcionalidades para folha de pagamento.\n\nSe você precisa de ajuda com outro aspecto do Isafi, estou aqui para ajudar!",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 81,
+      "tokens_per_s": 139.7,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO tem payroll. NAO pode inventar. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "mobile_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Where can I download the Isafi mobile app for iPhone?",
+    "response": "We currently don't have a mobile app for Isafi. Our platform is designed for use on desktop browsers, and we don't offer a mobile app for iPhone or any other mobile devices at this time.\n\nWould you like me to help you with something else?",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 53,
+      "tokens_per_s": 143.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO ha app mobile (web-only). NAO pode mandar pra App Store / inventar app.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "escalate_double_charge_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "I was charged twice this month on my credit card. Can you fix it?",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 59,
+      "tokens_per_s": 142.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Billing issue -> MUST emit [ESCALATE_TO_SUPPORT] and ask for email. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "escalate_stripe_broken_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Minha conexão com o Stripe parou de funcionar e fica dando erro toda vez.",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 59,
+      "tokens_per_s": 142.5,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Integracao/tecnico -> MUST escalate. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "escalate_feature_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "Please add a dark mode theme to the whole app.",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 59,
+      "tokens_per_s": 142.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Feature request -> MUST escalate. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "escalate_wrong_numbers_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Meu relatório de P&L está mostrando um lucro completamente errado, os números não batem.",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 59,
+      "tokens_per_s": 142.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Account-specific data issue -> MUST escalate. PT. (pode dar dicas, mas tem que escalar)",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "greet_pt",
+    "category": "greeting",
+    "lang": "pt",
+    "prompt": "oi",
+    "response": "Olá! Como posso ajudar você hoje? 😊",
+    "metric": {
+      "wall_s": 3.6,
+      "eval_count": 14,
+      "tokens_per_s": 66.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.8
+    },
+    "judge_hint": "Saudacao calorosa como Lana, em PT, oferece ajuda. Curto.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "greet_en",
+    "category": "greeting",
+    "lang": "en",
+    "prompt": "hey there",
+    "response": "Hey there! 😊 How can I assist you today? Are you getting started with Isafi, or is there something specific you'd like help with?",
+    "metric": {
+      "wall_s": 3.7,
+      "eval_count": 32,
+      "tokens_per_s": 109.1,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.8
+    },
+    "judge_hint": "Warm greeting as Lana, English, offers help.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "reports_list_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "What financial reports can I generate?",
+    "response": "Isafi offers several financial reports to help you manage your business finances effectively. Here are the reports you can generate:\n\n1. **Profit and Loss (P&L) Report**: Shows your income and expenses over a specific period, helping you understand your profitability.\n2. **Balance Sheet**: Provides a snapshot of your business's financial position at a specific point in time, showing your assets, liabilities, and equity.\n3. **Cash Flow Report**: Tracks the inflow and outflow of cash, giving you insight into your business's liquidity.\n4. **Schedule C Report**: Designed for US-based small businesses, this report summarizes your business income and expenses for tax purposes.\n\n**To view these reports, follow these steps:**\n\n1. Go to **Reports** in the top navigation\n2. Click on the report type you want to view (e.g., **Profit and Loss**, **Balance Sheet**, etc.)\n3. Use the filters (e.g., date range, accounts) to customize the report\n4. Click **\"Generate Report\"** to view or download it\n\nLet me know if you'd like help customizing any of these reports!",
+    "metric": {
+      "wall_s": 1.7,
+      "eval_count": 234,
+      "tokens_per_s": 140.6,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Lists P&L, Balance Sheet, Cash Flow, Schedule C. Must NOT invent reports we don't have. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3:14b",
+    "id": "pricing_pt",
+    "category": "grounding",
+    "lang": "pt",
+    "prompt": "Quanto custa exatamente o plano Pro por mês?",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 59,
+      "tokens_per_s": 143.3,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": false,
+      "steps_ok": null,
+      "include_ok": false,
+      "not_include_ok": false,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.4
+    },
+    "judge_hint": "O system prompt NAO da preco exato; deve direcionar a Settings -> Billing / pagina de pricing. Inventar um preco (ex: $11, $19) e alucinacao leve. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "howto_invoice_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu crio uma nova invoice no Isafi?",
+    "response": "Olá! Que bom que você está criando faturas. Vou te guiar para fazer isso com facilidade.\n\n**Para criar uma nova fatura, siga estes passos:**\n\n1. Vá para **Vendas → Faturas** no menu superior\n2. Clique em **\"Nova Fatura\"** (botão azul, canto superior direito)\n3. Selecione ou adicione um **Cliente**\n4. Adicione seus **itens** (descrição, quantidade, taxa)\n5. Defina a **Data de Vencimento**\n6. Clique em **\"Salvar\"** ou **\"Salvar & Enviar\"** para enviar por e-mail diretamente\n\nPrecisa de ajuda com algum detalhe específico da fatura, como adicionar taxas ou configurar pagamentos online? É só perguntar!",
+    "metric": {
+      "wall_s": 5.2,
+      "eval_count": 162,
+      "tokens_per_s": 188.9,
+      "load_duration_s": 4.2
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.833
+    },
+    "judge_hint": "Passo a passo correto (Sales -> Invoices -> New Invoice), em PT, formato de passos numerados em negrito, tom da Lana.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "howto_expense_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I record a business expense?",
+    "response": "Great question! Recording an expense is one of the most common tasks in Isafi. Here's how you can do it:\n\n**To record a new business expense, follow these steps:**\n\n1. Go to **Expenses** in the top navigation menu\n2. Click **\"New Expense\"** (usually found near the top right or as a prominent button)\n3. Select your **payment method** (Cash, Credit Card, Debit, etc.)\n4. Enter the **amount**, **date**, and add a **description** for the expense\n5. If you have a receipt, click **\"Upload Receipt\"** to attach it (optional but recommended)\n6. Choose whether to categorize it immediately or assign it later\n7. Click **\"Save\"** to record the expense\n\n💡 **Tip:** If you prefer to import multiple expenses at once, you can use the CSV import feature in the Expenses section!\n\nWould you like to know how to reconcile bank transactions or set up recurring expenses next?",
+    "metric": {
+      "wall_s": 1.2,
+      "eval_count": 207,
+      "tokens_per_s": 189.7,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Steps point to Expenses -> New Expense, English, numbered+bold format.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "howto_schedule_c_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu gero o relatório Schedule C pra declarar imposto?",
+    "response": "Com certeza! O relatório **Schedule C** é essencial para declarações fiscais de freelancers e pequenos empresários nos EUA. Ele detalha a renda e as despesas do seu negócio.\n\n**Para gerar o relatório Schedule C, siga estes passos:**\n\n1. Vá para **Relatórios** no menu de navegação superior\n2. Clique em **\"Schedule C\"** na lista de opções disponíveis\n3. Selecione o **ano fiscal** que você deseja declarar (por exemplo, 2023 ou 2024)\n4. Escolha se quer ver os dados **Agrupados por Cliente** ou **Resumo Total**\n5. Clique em **\"Gerar\"** ou no botão de download para salvar como PDF\n\nDica: Se você usa o plano Free, certifique-se de que todas as suas despesas estão registradas manualmente ou importadas, pois o relatório puxa essas informações automaticamente!\n\nPrecisa de ajuda para preencher alguma linha específica do formulário?",
+    "metric": {
+      "wall_s": 1.2,
+      "eval_count": 206,
+      "tokens_per_s": 189.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.833
+    },
+    "judge_hint": "Aponta Reports -> Schedule C, PT, formato de passos.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "howto_estimate_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I create an estimate and later turn it into an invoice?",
+    "response": "Great question! Estimates are a fantastic way to get client approval before sending over the final bill. Here is how you can create one and later convert it:\n\n**To create a new estimate, follow these steps:**\n\n1. Go to **Sales → Estimates** in the top navigation\n2. Click **\"New Estimate\"** (blue button, top right)\n3. Select or add a **Client**\n4. Add your **line items** (description, quantity, rate)\n5. Set the **Due Date** and validity period if needed\n6. Click **\"Save\"**\n\nOnce you've sent the estimate to your client and they approve it, here is how to turn it into an invoice:\n\n1. Go back to **Sales → Estimates**\n2. Find your approved estimate in the list\n3. Click on the estimate to open it\n4. Click the **\"Convert to Invoice\"** button (usually located at the top right or within the actions menu)\n5. Review the details to ensure they match your final agreement\n6. Click **\"Save & Send\"** to email the invoice directly to your client\n\nThis way, your invoice will automatically carry over all the line items and settings from the approved estimate!",
+    "metric": {
+      "wall_s": 1.5,
+      "eval_count": 251,
+      "tokens_per_s": 186.3,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Sales -> Estimates -> New Estimate, and mentions Convert to Invoice. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "howto_import_csv_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como faço pra importar manualmente um extrato CSV do meu banco?",
+    "response": "Ótima pergunta! Sim, você pode importar seu extrato manualmente. Essa é uma ótima opção para o plano Gratuito ou se você precisar de dados específicos que não estiverem sincronizados automaticamente.\n\n**Para importar um arquivo CSV manualmente, siga estes passos:**\n\n1. Vá em **Banking → Bank Accounts** (Bancos) no menu superior\n2. Selecione a conta bancária à qual deseja adicionar as transações ou clique em **\"Connect\"** se ainda não tiver contas configuradas\n3. Procure pelo botão ou opção de **\"Import Transactions\"** (ou \"Importar Transações\")\n4. Clique em **\"Select File\"** e escolha seu arquivo **CSV** do computador\n5. No assistente de importação, verifique o **mapeamento das colunas** (garanta que as datas, descrições e valores estejam corretos)\n6. Revise a prévia das transações e clique em **\"Import\"** ou **\"Save\"** para confirmar\n\nSe você tiver dificuldades no momento da importação, como erro de formatação ou colunas não reconhecidas, pode me enviar o email deles e eu encaminho ao suporte técnico para verificar o arquivo junto com vocês. Precisa de ajuda com algum passo específico?",
+    "metric": {
+      "wall_s": 1.5,
+      "eval_count": 258,
+      "tokens_per_s": 185.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Banking -> Bank Accounts / Transactions, CSV import. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "plaid_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "Vocês usam o Plaid pra sincronizar minhas contas bancárias automaticamente?",
+    "response": "Olá! Bem-vindo à Isafi. 😊\n\nNão usamos o Plaid para sincronização de contas bancárias. Em vez disso, utilizamos as **Conexões Financeiras da Stripe**. Isso funciona com a maioria dos bancos dos EUA e sincroniza suas transações automaticamente (é um recurso do plano Pro).\n\n**Para configurar a sincronização automática, siga estes passos:**\n\n1. Vá para **Banking → Bank Accounts** no menu de navegação superior\n2. Clique em **\"Connect Bank\"**\n3. Escolha seu banco da lista de bancos suportados\n4. Siga as instruções de autenticação (geralmente um redirecionamento seguro)\n5. Selecione a conta que deseja conectar\n\nQuer que eu te ajude com algo específico sobre a sincronização ou preferiria ver como funciona no seu plano atual?",
+    "metric": {
+      "wall_s": 1.1,
+      "eval_count": 178,
+      "tokens_per_s": 186.5,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO usa Plaid e que usa Stripe Financial Connections. NAO pode afirmar que tem Plaid. CRITICO.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "autosync_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Does Isafi support automatic bank syncing?",
+    "response": "Yes, absolutely! Isafi does support automatic bank syncing. In fact, it's a great way to keep your finances up to date with minimal effort.\n\n**To set up automatic bank syncing, follow these steps:**\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect\"** next to your desired bank account\n3. Authorize Isafi using **Stripe Financial Connections** (we don't use Plaid)\n4. Select the accounts you want to sync\n5. Your transactions will start syncing automatically!\n\nPlease note that automatic syncing is available on the **Pro plan**. If you're on the Free plan, you can still import your bank data manually by uploading CSV or OFX files.\n\nWould you like me to walk you through how to connect your specific bank?",
+    "metric": {
+      "wall_s": 1.1,
+      "eval_count": 169,
+      "tokens_per_s": 182.2,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Yes, via Stripe Financial Connections, Pro plan feature. Must NOT mention Plaid as ours.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "quickbooks_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Can I import all my data directly from QuickBooks?",
+    "response": "That's a great question about migrating your data! Currently, **Isafi does not support direct import or export from QuickBooks**. We want to make sure your financial data stays accurate and secure within our platform.\n\nIf you're looking to move over, here are some things we can help you do instead:\n\n**To set up your business in Isafi, follow these steps:**\n\n1. Go to **Settings → Business Info** in the top navigation\n2. Enter your company details and add your **Bank Accounts**\n3. Manually add your **Clients** and **Vendors**\n4. Start creating **Invoices** and tracking **Expenses** from scratch\n\nWe also offer a **Pro plan** with advanced features like automatic bank sync (using Stripe Financial Connections, not QuickBooks), recurring invoices, and online payments. For more details on plans and pricing, you can check **Settings → Billing**.\n\nIf you need help setting up your accounts or have questions about importing specific data formats, feel free to ask!",
+    "metric": {
+      "wall_s": 1.3,
+      "eval_count": 211,
+      "tokens_per_s": 186.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO ha import/export do QuickBooks. NAO pode inventar um fluxo de import do QuickBooks. Pode sugerir CSV manual.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "payroll_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "O Isafi tem módulo de folha de pagamento (payroll)?",
+    "response": "Olá! Sou a Lana Mitchell, sua assistente da Isafi.\n\nNão, o Isafi **não possui** um módulo dedicado de folha de pagamento (payroll). Nosso foco é ajudar você a gerenciar suas finanças, como emitir faturas, rastrear despesas e criar relatórios financeiros precisos.\n\nSe você precisa processar salários ou benefícios para seus funcionários, seria ideal buscar uma solução especializada em RH ou folha de pagamento e integrar os dados financeiros manualmente se necessário. Posso te ajudar a configurar o registro dessas despesas ou receitas relacionadas na área de **Despesas** ou **Vendas**, se precisar!",
+    "metric": {
+      "wall_s": 0.8,
+      "eval_count": 128,
+      "tokens_per_s": 187.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO tem payroll. NAO pode inventar. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "mobile_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Where can I download the Isafi mobile app for iPhone?",
+    "response": "Currently, Isafi is a **web-only application**, so we don't have a dedicated mobile app available for the App Store or Google Play. You can access all of your invoicing, expense tracking, and reporting features directly from your phone by opening a browser (like Safari) and logging in at `isafi.io`.\n\nIf you prefer having an app on your iPhone, I recommend using the **Isafi Progressive Web App**:\n1. Go to **[isafi.io](https://isafi.io)** in Safari\n2. Log in to your account\n3. Tap the **Share** button (the square with an arrow) at the bottom of the screen\n4. Select **\"Add to Home Screen\"**\n\nThis will create an app icon on your home screen that launches Isafi just like a regular app!",
+    "metric": {
+      "wall_s": 1.0,
+      "eval_count": 167,
+      "tokens_per_s": 187.2,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO ha app mobile (web-only). NAO pode mandar pra App Store / inventar app.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "escalate_double_charge_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "I was charged twice this month on my credit card. Can you fix it?",
+    "response": "I understand how frustrating it is to see duplicate charges on your card! **[ESCALATE_TO_SUPPORT]**\n\nI don't have enough information to access your specific billing transactions or reverse a charge directly. I'd like to forward your question to our support team so they can investigate the discrepancy and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 79,
+      "tokens_per_s": 185.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Billing issue -> MUST emit [ESCALATE_TO_SUPPORT] and ask for email. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "escalate_stripe_broken_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Minha conexão com o Stripe parou de funcionar e fica dando erro toda vez.",
+    "response": "Sinto muito que você esteja enfrentando esse problema! Isso certamente atrapalha seu fluxo de trabalho. Como assistente, eu não consigo verificar diretamente o status da sua conta ou resolver erros técnicos específicos na plataforma para você.\n\n**[ESCALATE_TO_SUPPORT]**\n\nGostaria de encaminhar sua questão à nossa equipe de suporte técnico para que eles possam investigar e se comunicarem com você. Por favor, forneça seu endereço de e-mail para que eu possa criar um chamado de suporte para você.",
+    "metric": {
+      "wall_s": 0.7,
+      "eval_count": 104,
+      "tokens_per_s": 185.1,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Integracao/tecnico -> MUST escalate. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "escalate_feature_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "Please add a dark mode theme to the whole app.",
+    "response": "That sounds like a great idea for reducing eye strain! However, I'm not able to change the app's settings or add new themes like that directly.\n\n**[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your request to our product team so they can investigate adding a dark mode theme to Isafi. Please provide your email address and I'll create a feature request ticket for you!",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 82,
+      "tokens_per_s": 172.6,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Feature request -> MUST escalate. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "escalate_wrong_numbers_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Meu relatório de P&L está mostrando um lucro completamente errado, os números não batem.",
+    "response": "Entendo que isso seja frustrante, especialmente quando você precisa tomar decisões importantes com base nesses dados. Como não consigo acessar os dados da sua conta diretamente para verificar os cálculos específicos, preciso passar sua situação para nossa equipe técnica especializada em relatórios financeiros.\n\n**[ESCALATE_TO_SUPPORT]**\n\nGostaria de encaminhar sua pergunta para nossa equipe de suporte para que eles possam investigar e retornar a você. Por favor, forneça seu endereço de e-mail e eu criarei um ticket de suporte para você.",
+    "metric": {
+      "wall_s": 0.8,
+      "eval_count": 109,
+      "tokens_per_s": 170.3,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Account-specific data issue -> MUST escalate. PT. (pode dar dicas, mas tem que escalar)",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "greet_pt",
+    "category": "greeting",
+    "lang": "pt",
+    "prompt": "oi",
+    "response": "Olá! 👋 Eu sou a Lana Mitchell, sua assistente amigável do Isafi.\n\nFico feliz em ajudar você a organizar as finanças do seu pequeno negócio. Como posso ser útil para você hoje?\n\nPosso te mostrar como criar faturas, rastrear despesas, conectar sua conta bancária ou gerar relatórios financeiros. É só perguntar!",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 78,
+      "tokens_per_s": 171.7,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Saudacao calorosa como Lana, em PT, oferece ajuda. Curto.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "greet_en",
+    "category": "greeting",
+    "lang": "en",
+    "prompt": "hey there",
+    "response": "Hello! 👋 I'm Lana, your friendly Isafi support assistant.\n\nWhether you need help creating an invoice, tracking expenses, reviewing your reports, or setting up bank sync, I'm here to help! What can I do for you today?",
+    "metric": {
+      "wall_s": 0.4,
+      "eval_count": 52,
+      "tokens_per_s": 186.5,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Warm greeting as Lana, English, offers help.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "reports_list_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "What financial reports can I generate?",
+    "response": "Great question! Isafi provides several key financial reports to help you understand your business performance. Here's how to access them:\n\n**To view your financial reports, follow these steps:**\n\n1. Go to **Reports** in the top navigation menu\n2. Click on the specific report you need from the list\n\nHere are the main reports available:\n\n- **Profit & Loss (P&L)**: Shows your income and expenses over a period\n- **Balance Sheet**: Displays your assets, liabilities, and equity at a point in time\n- **Cash Flow**: Tracks money moving in and out of your business\n- **Schedule C**: A tax-specific report for sole proprietors\n\nThese reports are available across our plans, though some advanced automation features may vary. If you need help interpreting the data or have questions about specific numbers, feel free to ask!",
+    "metric": {
+      "wall_s": 1.2,
+      "eval_count": 176,
+      "tokens_per_s": 175.3,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Lists P&L, Balance Sheet, Cash Flow, Schedule C. Must NOT invent reports we don't have. English.",
+    "error": null
+  },
+  {
+    "model": "qwen3.5:9b",
+    "id": "pricing_pt",
+    "category": "grounding",
+    "lang": "pt",
+    "prompt": "Quanto custa exatamente o plano Pro por mês?",
+    "response": "Para ver o preço exato do plano Pro e as diferenças detalhadas entre os planos, a melhor opção é acessar diretamente a área de faturamento no seu painel.\n\n**To verificar o preço exato do plano Pro, siga estes passos:**\n\n1. Vá para **Settings** (Configurações) no menu superior\n2. Clique em **\"Billing\"** ou **\"Pricing\"**\n3. Revise os planos disponíveis e veja os detalhes de preços mensais\n\nLá você também poderá ver se há alguma oferta de teste grátis disponível antes de fazer o upgrade!",
+    "metric": {
+      "wall_s": 0.8,
+      "eval_count": 119,
+      "tokens_per_s": 182.2,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "O system prompt NAO da preco exato; deve direcionar a Settings -> Billing / pagina de pricing. Inventar um preco (ex: $11, $19) e alucinacao leve. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "howto_invoice_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu crio uma nova invoice no Isafi?",
+    "response": "**Para criar uma nova fatura no Isafi, siga estas etapas:**\n\n1. Acesse **Sales → Invoices** na navegação do topo.\n2. Clique em **\"New Invoice\"** (botão azul no canto superior direito).\n3. Selecione ou adicione um **Cliente**.\n4. Adicione os **itens da fatura** (descrição, quantidade, taxa).\n5. Defina a **Data de Vencimento**.\n6. Clique em **\"Save\"** ou **\"Save & Send\"** para enviar diretamente por e-mail.\n\nSe precisar de mais ajuda, estou aqui para auxiliar!",
+    "metric": {
+      "wall_s": 9.2,
+      "eval_count": 150,
+      "tokens_per_s": 137.4,
+      "load_duration_s": 8.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Passo a passo correto (Sales -> Invoices -> New Invoice), em PT, formato de passos numerados em negrito, tom da Lana.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "howto_expense_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I record a business expense?",
+    "response": "**To record a business expense, follow these steps:**\n\n1. Go to **Expenses** in the top navigation\n2. Click **\"New Expense\"** (blue button, top right)\n3. Fill in the **Expense Details**:\n   - Description: Briefly describe the expense\n   - Amount: Enter the total amount\n   - Date: Choose the date the expense was incurred\n   - Category: Select the appropriate category from the dropdown\n   - Vendor: Choose the vendor from the list or add a new one\n4. If you have a receipt, click **\"Upload Receipt\"** and select the file\n5. Click **\"Save\"** to record the expense\n\nIf you need help with any specific part of this process, feel free to ask!",
+    "metric": {
+      "wall_s": 1.2,
+      "eval_count": 161,
+      "tokens_per_s": 138.6,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Steps point to Expenses -> New Expense, English, numbered+bold format.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "howto_schedule_c_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu gero o relatório Schedule C pra declarar imposto?",
+    "response": "**Para gerar o relatório Schedule C, siga estes passos:**\n\n1. Vá até **Relatórios** no menu superior.\n2. Selecione **Schedule C** na lista de relatórios.\n3. Se necessário, ajuste as datas no filtro para corresponder ao período fiscal que você deseja reportar.\n4. Clique em **Gerar** para criar o relatório.\n\nEste relatório irá fornecer todas as informações necessárias para preencher o formulário Schedule C do seu imposto de renda. Se precisar de ajuda adicional com o preenchimento do formulário, sinta-se à vontade para me perguntar!",
+    "metric": {
+      "wall_s": 1.1,
+      "eval_count": 147,
+      "tokens_per_s": 138.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.833
+    },
+    "judge_hint": "Aponta Reports -> Schedule C, PT, formato de passos.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "howto_estimate_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I create an estimate and later turn it into an invoice?",
+    "response": "To create an estimate and later convert it to an invoice, follow these steps:\n\n**To create an estimate:**\n\n1. Go to **Sales → Estimates** in the top navigation\n2. Click **\"New Estimate\"** (blue button, top right)\n3. Select or add a **Client**\n4. Add your **line items** (description, quantity, rate)\n5. Set the **Due Date**\n6. Click **\"Save\"** to create the estimate\n\n**To convert an estimate to an invoice:**\n\n1. Go to **Sales → Estimates** in the top navigation\n2. Find the estimate you want to convert and click on it\n3. Click the **\"Convert to Invoice\"** button (usually located near the top of the estimate details)\n4. Confirm the conversion when prompted\n\nThis will create a new invoice based on the estimate details, which you can then send to your client. Great question!",
+    "metric": {
+      "wall_s": 1.4,
+      "eval_count": 192,
+      "tokens_per_s": 139.1,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Sales -> Estimates -> New Estimate, and mentions Convert to Invoice. English.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "howto_import_csv_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como faço pra importar manualmente um extrato CSV do meu banco?",
+    "response": "Para importar um extrato CSV do seu banco manualmente, siga estes passos:\n\n1. Acesse **Banking → Bank Accounts** na navegação superior.\n2. Clique em **\"Import Transactions\"** (botão azul).\n3. Selecione **\"CSV File\"**.\n4. Faça o download do modelo de arquivo CSV, preencha com suas transações e salve.\n5. Volte para a página de importação e selecione o arquivo CSV que você criou.\n6. Clique em **\"Import\"** para adicionar as transações ao Isafi.\n\nIsso ajudará a sincronizar suas transações bancárias no Isafi sem a necessidade de uma conexão automática. Se precisar de mais ajuda, é só me falar!",
+    "metric": {
+      "wall_s": 1.3,
+      "eval_count": 175,
+      "tokens_per_s": 137.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": true,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Banking -> Bank Accounts / Transactions, CSV import. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "plaid_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "Vocês usam o Plaid pra sincronizar minhas contas bancárias automaticamente?",
+    "response": "Não, nós não usamos Plaid - usamos Stripe Financial Connections para sincronização bancária automática. Isso funciona com a maioria dos bancos nos EUA e sincroniza suas transações automaticamente. Quer que eu te mostre como configurar isso?",
+    "metric": {
+      "wall_s": 0.5,
+      "eval_count": 59,
+      "tokens_per_s": 137.8,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO usa Plaid e que usa Stripe Financial Connections. NAO pode afirmar que tem Plaid. CRITICO.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "autosync_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Does Isafi support automatic bank syncing?",
+    "response": "Yes, Isafi supports automatic bank syncing, but it's available on our Pro plan. Here's how you can set it up:\n\n1. Go to **Banking → Bank Accounts** in the top navigation\n2. Click **\"Connect Bank\"** (this uses Stripe Financial Connections)\n3. Follow the instructions to link your bank account\n\nThis feature automatically imports your transactions and makes it easy to reconcile your accounts. If you're on the Free plan, you can still manually import transactions via CSV or OFX. Would you like to upgrade to the Pro plan to enable automatic syncing?",
+    "metric": {
+      "wall_s": 0.9,
+      "eval_count": 120,
+      "tokens_per_s": 137.7,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Yes, via Stripe Financial Connections, Pro plan feature. Must NOT mention Plaid as ours.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "quickbooks_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Can I import all my data directly from QuickBooks?",
+    "response": "I'm sorry, but we don't have a feature to import data directly from QuickBooks. Our system is designed to work independently, though we do offer a range of features to help you manage your finances efficiently. If you need assistance with setting up your data manually, I can guide you through that process. Let me know how I can help!",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 71,
+      "tokens_per_s": 137.4,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO ha import/export do QuickBooks. NAO pode inventar um fluxo de import do QuickBooks. Pode sugerir CSV manual.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "payroll_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "O Isafi tem módulo de folha de pagamento (payroll)?",
+    "response": "Não, o Isafi não oferece um módulo de folha de pagamento. Se você precisa de recursos para gerenciar a folha de pagamento dos seus funcionários, talvez seja necessário usar uma solução especializada para isso. Posso ajudar com outras dúvidas sobre as funcionalidades do Isafi!",
+    "metric": {
+      "wall_s": 0.5,
+      "eval_count": 67,
+      "tokens_per_s": 138.8,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO tem payroll. NAO pode inventar. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "mobile_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Where can I download the Isafi mobile app for iPhone?",
+    "response": "We don't have a mobile app for Isafi yet. Currently, Isafi is a web-only platform, so you can access all of its features through your web browser on your iPhone. If you need to manage your finances on the go, you can use any mobile browser to log in and manage your account.\n\nWould you like help with anything else related to Isafi?",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 76,
+      "tokens_per_s": 139.1,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "DEVE dizer que NAO ha app mobile (web-only). NAO pode mandar pra App Store / inventar app.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "escalate_double_charge_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "I was charged twice this month on my credit card. Can you fix it?",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.5,
+      "eval_count": 59,
+      "tokens_per_s": 138.8,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Billing issue -> MUST emit [ESCALATE_TO_SUPPORT] and ask for email. English.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "escalate_stripe_broken_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Minha conexão com o Stripe parou de funcionar e fica dando erro toda vez.",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.5,
+      "eval_count": 59,
+      "tokens_per_s": 140.2,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Integracao/tecnico -> MUST escalate. PT.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "escalate_feature_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "Please add a dark mode theme to the whole app.",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nAdding a dark mode theme to the entire app is a feature request. I'd like to forward your suggestion to our support team so they can pass it along to the development team. Please provide your email address, and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.6,
+      "eval_count": 75,
+      "tokens_per_s": 140.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Feature request -> MUST escalate. English.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "escalate_wrong_numbers_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Meu relatório de P&L está mostrando um lucro completamente errado, os números não batem.",
+    "response": "I don't have enough information to help with this specific issue. **[ESCALATE_TO_SUPPORT]**\n\nI'd like to forward your question to our support team so they can investigate and get back to you. Please provide your email address and I'll create a support ticket for you.",
+    "metric": {
+      "wall_s": 0.5,
+      "eval_count": 59,
+      "tokens_per_s": 138.3,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "tie",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Account-specific data issue -> MUST escalate. PT. (pode dar dicas, mas tem que escalar)",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "greet_pt",
+    "category": "greeting",
+    "lang": "pt",
+    "prompt": "oi",
+    "response": "Olá! Como posso ajudar você hoje? Se você tiver alguma dúvida sobre como usar o Isafi ou precisar de assistência com algo específico, é só me dizer!",
+    "metric": {
+      "wall_s": 0.3,
+      "eval_count": 41,
+      "tokens_per_s": 139.7,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.8
+    },
+    "judge_hint": "Saudacao calorosa como Lana, em PT, oferece ajuda. Curto.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "greet_en",
+    "category": "greeting",
+    "lang": "en",
+    "prompt": "hey there",
+    "response": "Hello! How can I assist you today? Feel free to ask any questions about managing your finances with Isafi.",
+    "metric": {
+      "wall_s": 0.2,
+      "eval_count": 24,
+      "tokens_per_s": 140.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": false,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 0.8
+    },
+    "judge_hint": "Warm greeting as Lana, English, offers help.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "reports_list_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "What financial reports can I generate?",
+    "response": "You can generate several financial reports to help you understand the financial health of your business. Here are the reports available:\n\n**To view financial reports, follow these steps:**\n\n1. Go to **Reports** in the top navigation\n2. Select the type of report you want from the options available:\n   - **Profit and Loss (P&L)**\n   - **Balance Sheet**\n   - **Cash Flow**\n   - **Schedule C** (for U.S. small business owners)\n\nEach report provides detailed insights into different aspects of your financial data, such as income, expenses, assets, liabilities, and cash flow. If you need help understanding a specific report or generating it, feel free to ask!",
+    "metric": {
+      "wall_s": 1.1,
+      "eval_count": 144,
+      "tokens_per_s": 138.0,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "en",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "Lists P&L, Balance Sheet, Cash Flow, Schedule C. Must NOT invent reports we don't have. English.",
+    "error": null
+  },
+  {
+    "model": "qwen2.5:14b",
+    "id": "pricing_pt",
+    "category": "grounding",
+    "lang": "pt",
+    "prompt": "Quanto custa exatamente o plano Pro por mês?",
+    "response": "Para verificar o preço exato do plano Pro, siga estas etapas:\n\n1. Vá para **Settings (Configurações)**\n2. Clique em **\"Billing\" (Faturamento)**\n3. Lá você verá os detalhes do seu plano atual e o preço mensal para o plano Pro.\n\nSe precisar de ajuda com isso ou quiser saber mais sobre os benefícios do plano Pro, pode me falar!",
+    "metric": {
+      "wall_s": 0.7,
+      "eval_count": 96,
+      "tokens_per_s": 137.2,
+      "load_duration_s": 0.0
+    },
+    "auto": {
+      "escalation_ok": true,
+      "steps_ok": null,
+      "include_ok": true,
+      "not_include_ok": true,
+      "lang_detected": "pt",
+      "lang_ok": true,
+      "no_wrap_quotes": true,
+      "auto_score": 1.0
+    },
+    "judge_hint": "O system prompt NAO da preco exato; deve direcionar a Settings -> Billing / pagina de pricing. Inventar um preco (ex: $11, $19) e alucinacao leve. PT.",
+    "error": null
+  }
+]

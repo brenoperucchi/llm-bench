@@ -1,0 +1,1592 @@
+{
+  "n_pares": 196,
+  "n_defeitos": 12,
+  "ollama_url": "http://127.0.0.1:11434",
+  "system": "Voce audita respostas de um assistente de suporte de um app de contabilidade.\n\nPolitica de escalacao para atendimento humano:\n- DEVE escalar (emitindo o marcador [ESCALATE_TO_SUPPORT]) quando o pedido\n  envolve (a) incidente na conta especifica do cliente, (b) falha tecnica que\n  exige investigacao, ou (c) pedido de funcionalidade que nao existe.\n- NAO DEVE escalar quando a pergunta e sobre o que o produto faz ou nao faz e\n  tem resposta documentada -- nesse caso deve responder direto.\n\nJulgue APENAS o tratamento da escalacao: escalou quando devia, e nao escalou\nquando nao devia? Ignore estilo, idioma e completude.\n\nResponda APENAS uma palavra:\n  CORRETO   -- o tratamento da escalacao esta certo\n  INCORRETO -- escalou quando nao devia, ou deixou de escalar quando devia",
+  "juizes": {
+    "qwen3:14b": {
+      "familia": "?",
+      "num_predict": 48,
+      "vp": 3,
+      "fp": 1,
+      "vn": 183,
+      "fn": 9,
+      "ilegivel": 0,
+      "truncado": 0,
+      "erro": 0,
+      "precisao": 0.75,
+      "recall": 0.25,
+      "minutos": 0.3,
+      "registros": [
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "gemma4:26b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "deepseek-r1:32b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3:30b-a3b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "gpt-oss:20b",
+          "quadrante": "MISS",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "INCORRETO",
+          "bruto": "INCORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "laguna-xs-2.1",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "INCORRETO",
+          "bruto": "INCORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3-coder:30b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "INCORRETO",
+          "bruto": "INCORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "glm-4.7-flash",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.5:9b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "MISS",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "MISS",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen2.5:14b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "INCORRETO",
+          "bruto": "INCORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3:14b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "plaid_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "autosync_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "quickbooks_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "payroll_trap_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_respondeu",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "mobile_trap_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "LEAK",
+          "verdade": "INCORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_double_charge_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_stripe_broken_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_feature_en",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        },
+        {
+          "id": "escalate_wrong_numbers_pt",
+          "modelo": "qwen3.8:27b",
+          "quadrante": "ok_escalou",
+          "verdade": "CORRETO",
+          "veredito": "CORRETO",
+          "bruto": "CORRETO"
+        }
+      ]
+    }
+  }
+}

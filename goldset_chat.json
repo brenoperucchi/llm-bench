@@ -1,0 +1,350 @@
+[
+  {
+    "id": "howto_invoice_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu crio uma nova invoice no Isafi?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": true,
+      "must_include_any": [
+        [
+          "Sales"
+        ],
+        [
+          "Invoice",
+          "Invoices"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Passo a passo correto (Sales -> Invoices -> New Invoice), em PT, formato de passos numerados em negrito, tom da Lana. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "howto_expense_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I record a business expense?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": true,
+      "must_include_any": [
+        [
+          "Expenses"
+        ],
+        [
+          "New Expense"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Steps point to Expenses -> New Expense, English, numbered+bold format. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "howto_schedule_c_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como eu gero o relatório Schedule C pra declarar imposto?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": true,
+      "must_include_any": [
+        [
+          "Reports"
+        ],
+        [
+          "Schedule C"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Aponta Reports -> Schedule C, PT, formato de passos. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "howto_estimate_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "How do I create an estimate and later turn it into an invoice?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": true,
+      "must_include_any": [
+        [
+          "Estimate",
+          "Estimates"
+        ],
+        [
+          "Convert to Invoice"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Sales -> Estimates -> New Estimate, and mentions Convert to Invoice (o botao literal, nao um caminho alternativo por Invoices). English. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "howto_import_csv_pt",
+    "category": "howto",
+    "lang": "pt",
+    "prompt": "Como faço pra importar manualmente um extrato CSV do meu banco?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": true,
+      "must_include_any": [
+        [
+          "Banking"
+        ],
+        [
+          "CSV"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Banking -> Bank Accounts / Transactions, CSV import. PT. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "plaid_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "Vocês usam o Plaid pra sincronizar minhas contas bancárias automaticamente?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "Stripe Financial Connections",
+          "Stripe"
+        ]
+      ],
+      "must_not_include": []
+    },
+    "judge": "DEVE dizer que NAO usa Plaid e que usa Stripe Financial Connections. NAO pode afirmar que tem Plaid. CRITICO. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "autosync_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Does Isafi support automatic bank syncing?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "Stripe Financial Connections",
+          "Stripe"
+        ],
+        [
+          "Pro"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Yes, via Stripe Financial Connections, Pro plan feature. Must NOT mention Plaid as ours. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "quickbooks_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Can I import all my data directly from QuickBooks?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [],
+      "must_not_include": []
+    },
+    "judge": "DEVE dizer que NAO ha import/export do QuickBooks. NAO pode inventar um fluxo de import do QuickBooks. Pode sugerir CSV manual. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "payroll_trap_pt",
+    "category": "anti_hallucination",
+    "lang": "pt",
+    "prompt": "O Isafi tem módulo de folha de pagamento (payroll)?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [],
+      "must_not_include": []
+    },
+    "judge": "DEVE dizer que NAO tem payroll. NAO pode inventar. PT. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "mobile_trap_en",
+    "category": "anti_hallucination",
+    "lang": "en",
+    "prompt": "Where can I download the Isafi mobile app for iPhone?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [],
+      "must_not_include": []
+    },
+    "judge": "DEVE dizer que NAO ha app mobile (web-only). NAO pode mandar pra App Store / inventar app. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "escalate_double_charge_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "I was charged twice this month on my credit card. Can you fix it?",
+    "auto": {
+      "expect_escalation": true,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "[ESCALATE_TO_SUPPORT]"
+        ]
+      ],
+      "must_not_include": []
+    },
+    "judge": "Billing issue -> MUST emit [ESCALATE_TO_SUPPORT] and ask for email. English. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "escalate_stripe_broken_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Minha conexão com o Stripe parou de funcionar e fica dando erro toda vez.",
+    "auto": {
+      "expect_escalation": true,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "[ESCALATE_TO_SUPPORT]"
+        ]
+      ],
+      "must_not_include": []
+    },
+    "judge": "Integracao/tecnico -> MUST escalate. PT. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "escalate_feature_en",
+    "category": "escalation",
+    "lang": "en",
+    "prompt": "Please add a dark mode theme to the whole app.",
+    "auto": {
+      "expect_escalation": true,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "[ESCALATE_TO_SUPPORT]"
+        ]
+      ],
+      "must_not_include": []
+    },
+    "judge": "Feature request -> MUST escalate. English. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "escalate_wrong_numbers_pt",
+    "category": "escalation",
+    "lang": "pt",
+    "prompt": "Meu relatório de P&L está mostrando um lucro completamente errado, os números não batem.",
+    "auto": {
+      "expect_escalation": true,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "[ESCALATE_TO_SUPPORT]"
+        ]
+      ],
+      "must_not_include": []
+    },
+    "judge": "Account-specific data issue -> MUST escalate. PT. (pode dar dicas, mas tem que escalar) O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "greet_pt",
+    "category": "greeting",
+    "lang": "pt",
+    "prompt": "oi",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "Lana"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Saudacao calorosa como Lana, em PT, oferece ajuda. Curto. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "greet_en",
+    "category": "greeting",
+    "lang": "en",
+    "prompt": "hey there",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "Lana"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Warm greeting as Lana, English, offers help. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "reports_list_en",
+    "category": "howto",
+    "lang": "en",
+    "prompt": "What financial reports can I generate?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "Profit",
+          "P&L"
+        ],
+        [
+          "Balance Sheet"
+        ],
+        [
+          "Cash Flow"
+        ],
+        [
+          "Schedule C"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "Lists P&L, Balance Sheet, Cash Flow, Schedule C. Must NOT invent reports we don't have. English. O raciocinio do modelo NAO pode aparecer na resposta."
+  },
+  {
+    "id": "pricing_pt",
+    "category": "grounding",
+    "lang": "pt",
+    "prompt": "Quanto custa exatamente o plano Pro por mês?",
+    "auto": {
+      "expect_escalation": false,
+      "expect_steps_format": false,
+      "must_include_any": [
+        [
+          "Settings",
+          "Billing",
+          "pricing"
+        ]
+      ],
+      "must_not_include": [
+        "[ESCALATE_TO_SUPPORT]"
+      ]
+    },
+    "judge": "O system prompt NAO da preco exato; deve direcionar a Settings -> Billing / pagina de pricing. Inventar um preco (ex: $11, $19) e alucinacao leve. PT. O raciocinio do modelo NAO pode aparecer na resposta."
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "modelo": "qwen3:14b",
+  "braco": "A",
+  "n": 1,
+  "seed": 42,
+  "max_rounds": 8,
+  "doc_sha256": "062756773aa6a7f0862771d5a1fb102090762c281eb5bab4269a49ea58b3319a",
+  "sem_url_inventada": 1,
+  "chegou_conclude": 1,
+  "citacao_valida": 1,
+  "campo_valido": 1,
+  "conclusao_valida": 1,
+  "erros_infra": 0,
+  "runs": [
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "gastou_em_identidade": false,
+        "detalhe": [],
+        "valor_reportado": "2,4 (dois virgula quatro)"
+      },
+      "buscas": [
+        "coeficiente de aproveitamento maximo ZR-3 Vila Serrana SP legislacao"
+      ],
+      "urls_buscadas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 8.942444870015606
+    }
+  ]
+}

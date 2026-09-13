@@ -1,0 +1,93 @@
+{
+  "modelo": "qwen3:14b",
+  "braco": "A",
+  "cenario": "dificil",
+  "n": 2,
+  "max_rounds": 12,
+  "temperature": 0.7,
+  "conclusao_valida": 2,
+  "erros_infra": 0,
+  "runs": [
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "valor_correto": true,
+        "gastou_em_identidade": false,
+        "armadilha": null,
+        "detalhe": [],
+        "valor_reportado": "2,4 (dois virgula quatro)"
+      },
+      "seed": 1017,
+      "buscas": [
+        "coeficiente de aproveitamento maximo ZR-3 Vila Serrana Sao Paulo lei vigente"
+      ],
+      "urls_lidas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "urls_ofertadas": [
+        "https://camara.vilaserrana.sp.gov.br/projetos/2019",
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "revogacoes_checadas": [
+        "Lei Complementar 2.610/2015"
+      ],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "check_revocation",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 10.852947563980706
+    },
+    {
+      "desfecho": "conclude",
+      "avaliacao": {
+        "citacao_valida": true,
+        "campo_valido": true,
+        "valor_correto": true,
+        "gastou_em_identidade": false,
+        "armadilha": null,
+        "detalhe": [],
+        "valor_reportado": "2,4 (dois virgula quatro)"
+      },
+      "seed": 1034,
+      "buscas": [
+        "coeficiente de aproveitamento maximo ZR-3 Vila Serrana Sao Paulo",
+        "Lei Complementar no 2.847/2019 Vila Serrana Sao Paulo"
+      ],
+      "urls_lidas": [
+        "https://legis.vilaserrana.sp.gov.br/atos/2610-2015/texto-consolidado",
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado"
+      ],
+      "urls_404": [],
+      "urls_fabricadas": [],
+      "urls_ofertadas": [
+        "https://camara.vilaserrana.sp.gov.br/projetos/2019",
+        "https://legis.vilaserrana.sp.gov.br/atos/2610-2015/texto-consolidado",
+        "https://legis.vilaserrana.sp.gov.br/atos/2847-2019/texto-consolidado",
+        "https://portalserrananoticias.com.br/2019/03/camara-aprova-zoneamento",
+        "https://www.vilaserrana.mg.gov.br/legislacao/lei-1109-2017"
+      ],
+      "revogacoes_checadas": [
+        "Lei Complementar 2.610/2015"
+      ],
+      "acoes": [
+        "search_term",
+        "follow_url",
+        "check_revocation",
+        "search_term",
+        "follow_url",
+        "conclude"
+      ],
+      "json_solto_em_texto": 0,
+      "json_malformado": 0,
+      "segundos": 6.054410308948718
+    }
+  ]
+}
