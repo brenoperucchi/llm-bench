@@ -1,6 +1,6 @@
 # Methodology and reproduction
 
-[Português](../metodologia.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../metodologia.md) · [English index](README.md)
 
 The [experiment catalog](benchmarks.md) describes the design and caveats of
 each measurement. This page guides interpretation and new runs; publishing

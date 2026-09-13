@@ -1,6 +1,6 @@
 # Open questions and gaps
 
-[Português](../pendencias.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../pendencias.md) · [English index](README.md)
 
 This record is derived from the [handoff](../history/handoff-2026-09-12.md),
 the sources cited below, and the offline checks performed while organizing

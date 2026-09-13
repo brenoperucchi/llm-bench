@@ -1,6 +1,6 @@
 # Infraestrutura da bancada
 
-**Português** | [English](en/infrastructure.md)
+[English](en/infrastructure.md) | **Português (Brasil)**
 
 Esta página descreve o estado registrado no [handoff de 12/09/2026](history/handoff-2026-09-12.md)
 e na [decisão de produção](../results/DECISAO-producao-2026-09-09.md).

@@ -1,6 +1,6 @@
 # Experiment catalog — RTX 5090
 
-[Português](../rtx5090/experimentos.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../rtx5090/experimentos.md) · [English index](README.md)
 
 Documentation consolidated on September 12, 2026, starting from the [handoff](../history/handoff-2026-09-12.md). No benchmarks were run to create this catalog. Final corrections in the reports take precedence over their opening summaries. The [September 4 final report](../../RELATORIO-FINAL-2026-09-04.md) is a historical synthesis, not the latest state of every experiment. Historical source reports remain in Portuguese.
 

@@ -1,6 +1,6 @@
 # Findings catalog — RTX 5090
 
-[Portuguese original](../rtx5090/achados.md) · **English** · [English index](README.md)
+**English** | [Português (Brasil)](../rtx5090/achados.md) · [English index](README.md)
 
 Consolidated on 2026-09-12 from the [handoff](../history/handoff-2026-09-12.md), reports, and local artifacts. Historical files remain preserved. This catalog gives priority to explicit corrections and raw data when a summary conflicts with them.
 

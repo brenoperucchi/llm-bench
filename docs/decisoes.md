@@ -1,6 +1,6 @@
 # Decisões e limites de aplicação
 
-**Português** | [English](en/decisions.md)
+[English](en/decisions.md) | **Português (Brasil)**
 
 Estado documentado até 12/09/2026. Não é uma consulta em tempo real ao servidor.
 Fonte principal: [decisão de produção](../results/DECISAO-producao-2026-09-09.md),

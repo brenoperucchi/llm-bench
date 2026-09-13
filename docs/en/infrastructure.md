@@ -1,6 +1,6 @@
 # Benchmark infrastructure
 
-[Português](../infraestrutura.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../infraestrutura.md) · [English index](README.md)
 
 This page describes the state recorded in the [September 12, 2026 handoff](../history/handoff-2026-09-12.md)
 and the [production decision](../../results/DECISAO-producao-2026-09-09.md).

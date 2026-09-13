@@ -1,6 +1,6 @@
 # Pendências e lacunas
 
-**Português** | [English](en/open-questions.md)
+[English](en/open-questions.md) | **Português (Brasil)**
 
 Registro derivado do [handoff](history/handoff-2026-09-12.md), das fontes
 citadas abaixo e da conferência offline feita na organização do repositório.

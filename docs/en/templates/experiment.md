@@ -1,6 +1,6 @@
 # EXPERIMENT — descriptive title
 
-[Português](../../templates/experimento.md) | **English** · [English index](../README.md)
+**English** | [Português (Brasil)](../../templates/experimento.md) · [English index](../README.md)
 
 > Template to copy; the fields below are not evidence yet.
 

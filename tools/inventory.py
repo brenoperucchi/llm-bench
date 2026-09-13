@@ -86,7 +86,7 @@ def markdown_without_code(source):
 
 
 def validate_links(root):
-    documents = [root / "README.md", root / "baseline-3080ti/README.md"]
+    documents = sorted(root.glob("README*.md")) + [root / "baseline-3080ti/README.md"]
     documents += sorted((root / "docs").rglob("*.md"))
     errors = []
     for document in documents:

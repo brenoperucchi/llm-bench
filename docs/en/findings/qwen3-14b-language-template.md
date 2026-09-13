@@ -1,6 +1,6 @@
 # `qwen3:14b`: English responses and reproduction of the prompt example
 
-[Portuguese original](../../achados/ACHADO-qwen3-14b-idioma-template-2026-09-12.md) · **English** · [English index](../README.md)
+**English** | [Português (Brasil)](../../achados/ACHADO-qwen3-14b-idioma-template-2026-09-12.md) · [English index](../README.md)
 
 Documentation date: 2026-09-12. Status: **behavior confirmed in saved data; causal mechanism not isolated**. This consolidation only inspected local files; it did not run inference or modify the production prompt.
 

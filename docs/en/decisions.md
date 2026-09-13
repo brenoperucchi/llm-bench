@@ -1,6 +1,6 @@
 # Decisions and scope limits
 
-[Português](../decisoes.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../decisoes.md) · [English index](README.md)
 
 State documented through September 12, 2026. This is not a live server query.
 Primary source: the [production decision](../../results/DECISAO-producao-2026-09-09.md),

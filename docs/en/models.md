@@ -1,6 +1,6 @@
 # Measured models and usage limits
 
-[Português](../rtx5090/modelos.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../rtx5090/modelos.md) · [English index](README.md)
 
 Documentary inventory through the [September 12, 2026 handoff](../history/handoff-2026-09-12.md). This is neither a list of current market recommendations nor a live inventory. Tags are preserved as they appear in the artifacts. A model being available, researched, or mentioned in a plan does not mean it was measured. Historical source reports remain in Portuguese.
 

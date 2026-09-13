@@ -1,6 +1,6 @@
 # Catálogo de achados — RTX 5090
 
-**Português** | [English](../en/findings.md)
+[English](../en/findings.md) | **Português (Brasil)**
 
 Consolidado em 2026-09-12 a partir do [handoff](../history/handoff-2026-09-12.md), relatórios e artefatos locais. Os arquivos históricos continuam preservados. Este catálogo dá preferência às correções explícitas e ao dado bruto quando um resumo entra em conflito com eles.
 

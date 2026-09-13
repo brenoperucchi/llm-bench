@@ -1,6 +1,6 @@
 # `qwen3:14b`: respostas em inglês e reprodução do exemplo do prompt
 
-**Português** | [English](../en/findings/qwen3-14b-language-template.md)
+[English](../en/findings/qwen3-14b-language-template.md) | **Português (Brasil)**
 
 Data da documentação: 2026-09-12. Estado: **comportamento confirmado nos dados salvos; mecanismo causal não isolado**. Esta consolidação apenas inspecionou arquivos locais; não executou inferência nem modificou o prompt de produção.
 

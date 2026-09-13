@@ -1,6 +1,6 @@
 # llm-bench — RTX 5090 benchmarks
 
-[Português](../../README.md) | **English**
+**English** | [Português (Brasil)](../../README.pt-BR.md)
 
 A collection of performance, quality, and behavioral measurements of local
 LLMs running on **a 32 GB RTX 5090 with Ollama**. It brings together the

@@ -1,6 +1,6 @@
 # Provenance and integrity
 
-[Português](../proveniencia.md) | **English** · [English index](README.md)
+**English** | [Português (Brasil)](../proveniencia.md) · [English index](README.md)
 
 This organization started with the handoff specified by the user and consulted
 local reports, scripts, and results. It did not search for benchmarks on the

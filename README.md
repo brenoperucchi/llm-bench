@@ -1,97 +1,116 @@
-# llm-bench — benchmarks da RTX 5090
+# llm-bench — RTX 5090 benchmarks
 
-**Português** | [English](docs/en/README.md)
+**English** | [Português (Brasil)](README.pt-BR.md)
 
-Acervo de medições de desempenho, qualidade e comportamento de LLMs locais
-com Ollama na **RTX 5090 de 32 GB**. Reúne experimentos, dados brutos,
-scripts, decisões e correções registrados nesta bancada em setembro de 2026.
+A collection of performance, quality, and behavioral measurements of local
+LLMs running on **a 32 GB RTX 5090 with Ollama**. It brings together the
+experiments, raw results, scripts, findings, decisions, and corrections
+recorded by this lab in September 2026.
 
-O foco é entender o que funciona em cada carga: atendimento PT/EN,
-tool-calling, pesquisa em múltiplas rodadas, concorrência e contexto longo.
-Os resultados pertencem às configurações e amostras descritas nas fontes.
+This project covers customer support in Portuguese and English, tool
+calling, multi-turn research, concurrency, and long-context processing.
+Results apply to the configurations and samples described in their sources.
 
-## Comece aqui
+## Start here
 
-| Quero consultar | Documento |
+| What you want to read | Document |
 |---|---|
-| Experimentos, resultados e evidências por fase | [Catálogo de benchmarks](docs/rtx5090/experimentos.md) |
-| Modelos testados e limites de comparação | [Modelos](docs/rtx5090/modelos.md) |
-| Achados consolidados e suas ressalvas | [Catálogo de achados](docs/rtx5090/achados.md) |
-| Respostas em inglês a perguntas em português | [Achado PT→EN](docs/achados/ACHADO-qwen3-14b-idioma-template-2026-09-12.md) |
-| Decisões adotadas e recomendações retiradas | [Decisões](docs/decisoes.md) |
-| Método, métricas e como reproduzir | [Metodologia](docs/metodologia.md) |
-| Ambiente e cuidados operacionais | [Infraestrutura](docs/infraestrutura.md) |
-| Proposta do teste discriminante NUM_PARALLEL (em inglês; não executado) | [Desenho do teste](docs/en/plans/num-parallel-discriminating-test.md) |
-| O que falta investigar | [Pendências](docs/pendencias.md) |
-| Origem dos documentos e integridade | [Proveniência](docs/proveniencia.md) |
+| Experiments, results, and evidence by phase | [Benchmark catalog](docs/en/benchmarks.md) |
+| Tested models and comparison limits | [Models](docs/en/models.md) |
+| All 40 consolidated findings and caveats | [Findings](docs/en/findings.md) |
+| English answers to Portuguese questions | [PT→EN finding](docs/en/findings/qwen3-14b-language-template.md) |
+| Adopted decisions and withdrawn recommendations | [Decisions](docs/en/decisions.md) |
+| Metrics, methodology, and reproduction | [Methodology](docs/en/methodology.md) |
+| Lab setup and operating constraints | [Infrastructure](docs/en/infrastructure.md) |
+| Unanswered questions | [Open questions](docs/en/open-questions.md) |
+| Source history and file integrity | [Provenance](docs/en/provenance.md) |
+| Proposed NUM_PARALLEL discriminating test | [Test proposal — not executed](docs/en/plans/num-parallel-discriminating-test.md) |
+| Documenting a new experiment | [Experiment template](docs/en/templates/experiment.md) |
 
-## Como interpretar os resultados
+## How to interpret the results
 
-- **Qualidade e velocidade são eixos distintos.** A decisão registrada manteve
-  `qwen3:14b` como default e `qwen3.5:9b` como segundo residente; consulte o
-  [escopo da decisão](docs/decisoes.md) antes de extrapolar para outra carga.
-- **`auto_score` mudou em 10/09/2026:** o denominador passou de 5–6 para 6–7
-  checks. Não compare diretamente notas agregadas anteriores e posteriores.
-- **Concorrência:** `NUM_PARALLEL=2` reduziu o tempo do lote em 28% e o tempo
-  por requisição em 41% na re-medição com `qwen3:14b` e prompt de 2.108 tokens.
-  O efeito sobre o teto de prompts muito longos continua sem isolamento causal.
-- **Goldset rotulado:** o check determinístico identificou 12/12 defeitos de
-  escalação sem falsos positivos no conjunto usado para comparar juízes. Isso
-  não demonstra detecção universal de erros em produção.
-- **O handoff é fonte de partida.** A conferência do PT→EN encontrou diferenças
-  entre seu resumo e os dados brutos; leia o [achado dedicado](docs/achados/ACHADO-qwen3-14b-idioma-template-2026-09-12.md).
+- **Quality and speed are separate dimensions.** The recorded decision kept
+  `qwen3:14b` as the default and `qwen3.5:9b` as the second resident model.
+  Read the [decision's scope](docs/en/decisions.md) before applying it to another workload.
+- **`auto_score` changed on September 10, 2026:** the denominator went from
+  5–6 to 6–7 checks. Aggregate scores before and after that change are not
+  directly comparable.
+- **Concurrency:** `NUM_PARALLEL=2` reduced batch wall time by 28% and time
+  per request by 41% in the corrected experiment with `qwen3:14b` and a
+  2,108-token prompt. The proposed long-context experiment has not been run.
+- **Labeled goldset:** the deterministic check caught 12/12 escalation defects
+  with no false positives in the judge-comparison dataset. This does not
+  establish universal error detection in production.
+- **The handoff is a starting source.** Inspection of the raw PT→EN results
+  contradicted parts of that summary; the [dedicated finding](docs/en/findings/qwen3-14b-language-template.md)
+  records the supported counts and limits.
 
-As evidências detalhadas estão nos catálogos de experimentos e achados acima.
+The benchmark and findings catalogs link each claim to its supporting evidence.
 
-## Organização
+## English documentation, original evidence
+
+The English pages translate the consolidated Portuguese documentation. Their
+language links lead to the corresponding Portuguese pages. Historical reports,
+raw model responses, prompts, dataset labels, and scripts retain their original
+content and filenames. References to those files may therefore open Portuguese
+text or mixed-language data.
+
+This preserves the evidence: translating a measured response or prompt in place
+would change the experiment's inputs or outputs. The English catalogs explain
+those sources without modifying them. See [provenance](docs/en/provenance.md) for the
+translation and maintenance policy.
+
+## Repository layout
 
 ```text
-docs/
-  rtx5090/              experimentos, modelos e achados consolidados
-  achados/              documentação detalhada de achados novos
-  history/              handoff e README anterior preservados
-  templates/            modelo de registro para novos experimentos
-results/                relatórios originais e resultados JSON
-prompts/                prompt canônico, backup e tentativas históricas
-baseline-3080ti/         baseline antiga e scripts com localização histórica
-artifacts/manifest.json  inventário de evidências com SHA-256
-tools/inventory.py      verificação offline do acervo
-run_chat.py             avaliação de qualidade com goldset PT/EN
-bench.py                throughput de geração
-bench_engine_ab.py      comparação alternada entre dois endpoints
-goldset_chat.json       18 casos com expectativas e rubricas
+docs/en/                English documentation and navigation
+docs/rtx5090/           Portuguese benchmark, model, and findings catalogs
+docs/achados/           Detailed findings in Portuguese
+docs/history/           Preserved handoff and previous README
+docs/templates/         Portuguese experiment template
+results/                Original reports and JSON results
+prompts/                Canonical prompt, backup, and historical experiments
+baseline-3080ti/         Earlier GPU baseline and historically located scripts
+artifacts/manifest.json Evidence inventory with SHA-256 hashes
+tools/inventory.py      Offline archive validation
+run_chat.py             Quality evaluation using a PT/EN goldset
+bench.py                Generation throughput
+bench_engine_ab.py      Alternating comparison of two endpoints
+goldset_chat.json       18 cases with expectations and rubrics
 ```
 
-Os caminhos originais foram preservados: vários scripts da **5090** estão em
-`baseline-3080ti/repro/`. O [catálogo](docs/rtx5090/experimentos.md) identifica
-a que medição pertencem. O nome da pasta não identifica sozinho a GPU usada.
+Several scripts used for the **5090** remain under `baseline-3080ti/repro/`
+because they resolve repository paths relative to that location. The
+[benchmark catalog](docs/en/benchmarks.md) identifies their experiments; directory
+names alone do not establish the GPU used.
 
-## Verificar o acervo, sem GPU
+## Verify the archive without a GPU
 
-Requer Python 3.10 ou superior, sem dependências adicionais:
+Run from the repository root with Python 3.10 or later. No additional
+dependencies are needed:
 
 ```bash
 python3 tools/inventory.py check
 ```
 
-A verificação confere inventário, tamanhos, hashes, JSONs e links locais da
-documentação nova. O mesmo comando roda no GitHub Actions. Ele verifica a
-integridade dos arquivos; não confirma as conclusões científicas.
+This checks the evidence inventory, sizes, hashes, JSON files, and local links
+in the new documentation, including the English pages. GitHub Actions runs the
+same check. File integrity does not validate scientific conclusions.
 
-Para rodar novos benchmarks, consulte primeiro a [metodologia](docs/metodologia.md).
-As ferramentas de inferência fazem chamadas reais ao Ollama; algumas rotinas
-históricas dependem desta bancada ou alteram processos remotos.
+Read the [methodology](docs/en/methodology.md) before running inference scripts: they
+send real requests to Ollama, and some historical tools depend on this lab or
+modify remote processes.
 
-## Arquivo histórico
+## Historical archive
 
-- [Relatório consolidado original](RELATORIO-FINAL-2026-09-04.md): leitura
-  histórica, com atualizações e ressalvas posteriores.
-- [Baseline RTX 3080 Ti](baseline-3080ti/README.md): métricas de produção
-  incluem prefill e não equivalem ao throughput de decode isolado da 5090.
-- [Handoff de partida](docs/history/handoff-2026-09-12.md): snapshot do resumo
-  da sessão anterior, preservado com suas limitações.
-- [Sessões de origem](SESSOES.md): referências de proveniência; transcripts
-  completos e estado local do Herdr não fazem parte do repositório público.
+- [Original consolidated report](RELATORIO-FINAL-2026-09-04.md) —
+  Portuguese historical synthesis with later corrections and caveats.
+- [RTX 3080 Ti baseline](baseline-3080ti/README.md) — historical
+  production metrics include prefill and do not equal isolated decode throughput.
+- [Starting handoff](docs/history/handoff-2026-09-12.md) — Portuguese session
+  summary preserved with its limitations.
+- [Source sessions](SESSOES.md) — provenance references; full transcripts
+  and local Herdr state are not included in the public repository.
 
-O benchmark dedicado de tok/s da 3080 Ti mencionado no README anterior não
-foi preservado. Não existe aqui uma comparação controlada entre as duas GPUs.
+The dedicated 3080 Ti throughput benchmark mentioned in the old README was
+not preserved. This archive does not contain a controlled comparison of the two GPUs.
