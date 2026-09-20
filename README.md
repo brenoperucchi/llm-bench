@@ -19,7 +19,7 @@ Results apply to the configurations and samples described in their sources.
 | Experiments, results, and evidence by phase | [Benchmark catalog](docs/en/benchmarks.md) |
 | Tested models and comparison limits | [Models](docs/en/models.md) |
 | All 40 consolidated findings and caveats | [Findings](docs/en/findings.md) |
-| Detailed public record of the September campaign | [Public findings record](docs/achados/REGISTRO-PUBLICO-LLM-BENCH-2026-09-20.md) |
+| Detailed public record of the September campaign | [Public findings record (English)](docs/en/findings/public-record-llm-bench-2026-09-20.md) |
 | English answers to Portuguese questions | [PT→EN finding](docs/en/findings/qwen3-14b-language-template.md) |
 | Adopted decisions and withdrawn recommendations | [Decisions](docs/en/decisions.md) |
 | Metrics, methodology, and reproduction | [Methodology](docs/en/methodology.md) |

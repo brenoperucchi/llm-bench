@@ -6,6 +6,8 @@ Consolidated on 2026-09-12 from the [handoff](../history/handoff-2026-09-12.md),
 
 **Verified** means observed within the stated scope; it is not a promise for every workload or model. **Hypothesis** means an explanation that has not yet been isolated. **Limitation** records what a measurement cannot establish. **Retracted** identifies a superseded conclusion. Server state and decisions below are the latest available records, without a new query to the machine.
 
+For the detailed, sanitized record of the September campaign, see the [public findings record](findings/public-record-llm-bench-2026-09-20.md).
+
 ## Customer support, language, and escalation
 
 | ID | Status | Finding and scope | Evidence |
