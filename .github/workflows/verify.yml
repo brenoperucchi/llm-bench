@@ -18,3 +18,5 @@ jobs:
           python-version: '3.12'
       - name: Check evidence and documentation links
         run: python tools/inventory.py check
+      - name: Test offline measurement and detector contracts
+        run: python -m unittest discover -s tests -v
