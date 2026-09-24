@@ -5,7 +5,7 @@
 **Status: proposal with a partial live attempt.** With Breno's explicit approval,
 the NP=2 arm ran on 2026-09-16; the NP=1 discriminator did not run because a
 second 14B copy exhausted the GPU budget. The live artifact is
-[`RESULTADO-live-5090-2026-09-16.md`](../../../.herdr/live-5090-2026-09-16/RESULTADO-live-5090-2026-09-16.md).
+`RESULTADO-live-5090-2026-09-16.md` (`RESULTADO-live-5090-2026-09-16.md`, kept local: not in the public repository).
 The result is inconclusive, Breno accepted that disposition, and production
 remains at `NUM_PARALLEL=2`; no repeat is authorized.
 
