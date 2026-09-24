@@ -19,6 +19,13 @@ ROOT = Path(__file__).resolve().parents[1]
 CAMPAIGN = ROOT / "results" / "guardian-synthesis-20260921"
 SNAPSHOT = "mfc-exec~Ryzen9~ff6b18a9aaf6"
 
+# These tests read the real gold and chronology snapshots, which carry data from
+# other projects and are git-ignored in the public repository (they stay on the
+# lab machine). Skip — visibly, with the reason — where that evidence is absent.
+pytestmark = pytest.mark.skipif(
+    not (CAMPAIGN / "gold").exists(),
+    reason="local-only Guardian evidence (git-ignored in the public repository)")
+
 
 def _load_module():
     spec = importlib.util.spec_from_file_location("bench", ROOT / "tools" / "guardian_synthesis_bench.py")
